@@ -1,0 +1,263 @@
+{
+  "pageTitle": "Main Sail's Solutions Offering",
+  "heroImage": "/images/hero/Featured-Image-Solutions.jpg",
+  "intro": "Main Sail LLC helps organizations evaluate business needs, develop strategies, and implement solutions. We provide expertise in Business Process Management, Cybersecurity, Enterprise Resource Planning, Intelligent Enterprise, Low-Code Development, Maintenance Design Analytics, Program Resourcing, Program and Project Management, and Systems Engineering and Integration.",
+  "solutions": [
+    {
+      "id": "business-process-management",
+      "title": "Business Process Management",
+      "icon": "/images/solutions/BPM-1.png",
+      "description": "Main Sail helps businesses evaluate business issues and develop and implement solutions through Business Process Management (BPM), which is defined as the application of both methodology and technology to optimize business processes for achieving enterprise goals. In an era of rapidly changing environments, BPM is emerging as an essential enterprise-wide discipline that significantly improves management's capability to react quickly to events that impact the business.",
+      "subsections": [
+        {
+          "heading": "Benefits of BPM",
+          "text": "Some of the benefits managers and leaders can expect to realize from BPM are:",
+          "image": "/images/general/BusinessProcessManagement.png",
+          "bullets": [
+            "Agility and ability to quickly respond to business challenges and opportunities",
+            "Improved risk management through increased compliance and transparency",
+            "Responsive customer focus through lean processes and automation",
+            "Process visibility, consistency and repeatability which reduces errors and miscommunication",
+            "Elimination of silos and process disconnects to drive greater collaboration"
+          ]
+        }
+      ],
+      "additionalText": "Main Sail's experienced BPM practitioners combine BPM best practice approaches to process modeling, analysis, design, performance management and transformation with supporting BPM technologies to improve how organizations operate and plan strategically for the future. We utilize internationally recognized BPM bodies of knowledge and are not bound to any singular methodology or IT solution, but rather will seek a deep understanding of an organization's unique business issues and recommend and apply a tailored mix of process methodologies and IT solutions to produce desired outcomes."
+    },
+    {
+      "id": "cybersecurity",
+      "title": "Cybersecurity",
+      "icon": "/images/solutions/Cyb.png",
+      "description": "Main Sail's Cybersecurity team has more than 30 years of experience with providing analysis, solution design, and delivery services across a broad spectrum of cybersecurity environments and requirements.",
+      "bullets": [
+        {
+          "text": "Attack Vector Threat Analysis",
+          "subBullets": [
+            "Analyze what security vulnerabilities and attack vectors you have and how attackers could use these to gain unauthorized access to your network, whether that's through a brute force attack, malicious code, ransomware, or any other approach."
+          ]
+        },
+        {
+          "text": "Business Impact and Business Resumption Assessments"
+        },
+        {
+          "text": "Cyber Insurance Policy Review",
+          "subBullets": [
+            "Don't assume your cyber insurance policy provides the coverage you need.  There are many options, and Main Sail can provide assistance with reviewing your policy.  A few items to evaluate include Forensic Expenses, Credit Monitoring and ID Theft Repair, Remediation Costs, and many more.",
+            "Take a look at this info on Cybersecurity Insurance to see how Main Sail can help protect your company from cybersecurity risks."
+          ],
+          "links": [
+            {
+              "text": "Cybersecurity Insurance",
+              "href": "https://www.mainsailgroup.com/solutions/attachment/cybersecurity-insurance"
+            }
+          ]
+        },
+        {
+          "text": "Cybersecurity Products",
+          "subBullets": [
+            "We offer a broad spectrum of cybersecurity products including firewalls, AV, EDR, user awareness training, email protection, and many others. Our ecosystem of partners are technology leaders in the cybersecurity marketplace.",
+            "Our solutions team will make recommendations based on your specific needs and requirements."
+          ]
+        },
+        {
+          "text": "Incident Response Assessment and Services",
+          "subBullets": [
+            "Here is a document from the Department of the Treasury on Facilitating Ransomware Payments"
+          ],
+          "links": [
+            {
+              "text": "Facilitating Ransomware Payments",
+              "href": "https://www.mainsailgroup.com/solutions/attachment/ofac-ransomware-advisory"
+            }
+          ]
+        },
+        {
+          "text": "ITGC Assessments"
+        },
+        {
+          "text": "Penetration Testing"
+        },
+        {
+          "text": "Pre-Assessments: PCI, NIST, HIPPA, SDLC, CMMC",
+          "subBullets": [
+            "Need info on the new CMMC 2.0? Find out more here."
+          ],
+          "links": [
+            {
+              "text": "Find out more here",
+              "href": "/cmmc-2-0"
+            }
+          ]
+        },
+        {
+          "text": "Specific Audits – IT, Operations",
+          "subBullets": [
+            "IT general control audits – access controls, program changes, backup and recovery, and system validation.",
+            "Operational – process efficiency reviews, and system function and processing validation."
+          ]
+        },
+        {
+          "text": "User Awareness Training and Programs"
+        },
+        {
+          "text": "Virtual CISO"
+        }
+      ],
+      "additionalText": "Check out these additional Cybersecurity resources and then contact us today for your no-cost security consultation!",
+      "links": [
+        {
+          "text": "Cyber Hygiene",
+          "href": "https://www.mainsailgroup.com/solutions/attachment/main-sail-cyber-hygiene"
+        },
+        {
+          "text": "Latest Cybersecurity News",
+          "href": "/cybersecurity-news"
+        },
+        {
+          "text": "Keep Your Environment Safe from Cyber Attacks",
+          "href": "https://www.mainsailgroup.com/solutions/attachment/stay-safe-from-cyber-attacks"
+        }
+      ]
+    },
+    {
+      "id": "enterprise-resource-planning",
+      "title": "Enterprise Resource Planning",
+      "icon": "/images/solutions/ERP.png",
+      "description": "Main Sail's Enterprise Resource Planning (ERP) teams specialize in ERP full lifecycle management from solution architecture and design, to deployment, sustainment, and modernization in challenging federal and commercial environments.",
+      "image": "/images/general/Main_Sail_ERP2-1.png",
+      "additionalText": "We utilize many of the industry standard programs, including, but not limited to:",
+      "bullets": [
+        "SAP",
+        "Oracle",
+        "PeopleSoft",
+        "J.D. Edwards",
+        "INFOR ERP SYSTEMS",
+        "ERP-Based Manufacturing Solutions"
+      ]
+    },
+    {
+      "id": "intelligent-enterprise",
+      "title": "Intelligent Enterprise",
+      "icon": "/images/solutions/IE.png",
+      "description": "Main Sail assists businesses with their Intelligent Enterprise (IE) strategy. IE has enabled companies to virtually address connections that result in enhanced agility, scalability and optimization of business processes. IE allows businesses to combine technology with analytics to generate value in a manner not available on this scale before.",
+      "bullets": [
+        "IoT – extend internet connectivity beyond what are considered traditional devices to a wide range of devices that utilize embedded technology to communicate and interact with the external environment, all via the Internet.",
+        "Data Analytics – develop qualitative and quantitative techniques and processes to enhance productivity and business gains. Data is extracted and categorized to identify and analyze behavioral data and patterns, and techniques vary according to each organizational requirement.",
+        "Blockchain – tap into secure, distributed ledger technologies that can be simultaneously shared and accessed across public and private business networks for smart contracts, financial, supply chain, and identity management solutions.",
+        "Machine Learning – use the science of getting machines to learn and act in a similar way to humans while also autonomously learning from real-world interactions and sets of teaching data that we feed them.",
+        "Big Data – process a massive volume of both structured and unstructured data that is difficult to manage using traditional database and software techniques.",
+        "Robotic Process Automation (RPA) – lower costs and improve efficiency through automation of business processes and tedious, time-consuming work. Combine RPA and Artificial Intelligence (AI) to create intelligent and intuitive solutions to both every day and complex business problems."
+      ]
+    },
+    {
+      "id": "low-code-development",
+      "title": "Low-Code Development",
+      "icon": "/images/solutions/Picture5-e1634227746651.png",
+      "description": "",
+      "subsections": [
+        {
+          "heading": "Low-Code vs. No-Code Development",
+          "bullets": [
+            "Low-code is a software development approach that requires little to no coding to build applications and processes. Instead of using complex programming languages, you can employ visual interfaces with basic logic and drag-and-drop capabilities in a low code development platform.",
+            "Low-code is a visual approach to software development. With low-code, you can abstract and automate every step of the application lifecycle to streamline delivery of a variety of solutions. By breaking down traditional silos of business and IT (promoting continuous collaboration), your organization can develop solutions that meets the needs of your business.",
+            "In comparison, No-code platforms are designed entirely for citizen developers who develop small internal applications. No-code platforms are usually simpler to use but are extremely limited and not suited to develop enterprise-grade applications. Many organizations that invest in no-code platforms get pushback from professional developers due to the inherent customization limitations enforced by no-code architectures. On the other hand, low-code platforms provide a level of flexibility that ensures developers can extend the platform's expressiveness and will never hit a wall"
+          ]
+        },
+        {
+          "heading": "Low-Code Details",
+          "bullets": [
+            "Gartner, Inc. predicts that by 2024, low-code application development will be responsible for more than 65% of application development activity.",
+            "This article provides an overview of several low-code platforms along with industry information.",
+            "Main Sail has a development team experienced with both the Appian and Mendix Platforms. Contact us for additional information on how we can assist your development team."
+          ],
+          "links": [
+            {
+              "text": "overview of several low-code platforms along with industry information.",
+              "href": "https://www.softwaretestinghelp.com/low-code-development-platforms/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maintenance-design-analytics",
+      "title": "Maintenance Design Analytics",
+      "icon": "/images/solutions/MDA.png",
+      "description": "Main Sail is an authorized service provider for PHM Technology's powerful Maintenance Aware Design Environment (MADe).",
+      "additionalText": "MADe is an advanced, model-based decision support solution for complex engineering systems. Its full-service suite supports design optimization, risk analysis, cost estimation, reliability and maintainability studies and more. MADe works by modeling complex systems, functions and flow as engineering block diagrams, with each component and connection representing key attributes and parameters of the system. MADe improves the quality of decision-making at every step of a system's lifecycle (Bid / Proposal, Acquisition, Design, and Sustainment / Asset Management). Key workflow features include:",
+      "image": "/images/general/MADe2.png",
+      "subsections": [
+        {
+          "heading": "Design Optimization",
+          "bullets": [
+            "Standardized function and failure libraries for ease of use across a distributed workforce",
+            "Integrated analyses to support engineering decisions",
+            "Automated validations to verify safety and reliability of design"
+          ]
+        },
+        {
+          "heading": "Reliability Analysis",
+          "bullets": [
+            "Modelling of failure paths and functional failures to analyze impact across a system",
+            "Key failure identification to prioritize what needs to be inspected",
+            "Generation and optimization of maintenance plans to increase efficiency and lower costs"
+          ]
+        },
+        {
+          "heading": "Risk Assessment",
+          "bullets": [
+            "Variety of comprehensive methodologies available to fit necessary documentation",
+            "Customizable parameters to fit exact specifications and needs",
+            "Automated calculation of criticality for clear risk prioritization"
+          ]
+        }
+      ],
+      "closingText": "Optimize your design. Reduce your risk. Accelerate the decision process. Only with MADe."
+    },
+    {
+      "id": "program-and-project-management",
+      "title": "Program & Project Management",
+      "icon": "/images/solutions/PPM.png",
+      "description": "Main Sail applies proven and standardized Program and Project Management tools in concert with rigorous change management processes to fuel the success of organizations in managing multiple projects, and navigating complex activities that span functions, customers, and product lines.",
+      "additionalText": "Our seasoned practitioners are certified and experienced in project management methodologies that integrate globally accepted best practices with business-specific processes and techniques across both public and private industry. This includes a wide spectrum of value delivery approaches – predictive, iterative, incremental, agile, hybrid, theory of constraints, critical chain, and next generation paradigms.",
+      "bulletIntro": "We assist our clients in applying these approaches to:",
+      "bullets": [
+        "Project Management Office Establishment",
+        "ERP (SAP, Infor, Oracle, etc.) Implementation",
+        "Business Process Analysis",
+        "Organizational Change",
+        "Industrial Engineering",
+        "Software and Application Development",
+        "IT System Development Lifecycle Management",
+        "Equipment Lifecycle Management",
+        "Vendor Management Systems"
+      ],
+      "closingParagraphs": [
+        "We believe organizational and project attributes drive selection of suitable value delivery approaches that make the best use of time, talent and budget. We assess a business' environment and adapt methodologies to deliver optimal solutions to business needs.",
+        "As the industry continues to grow and evolve, we remain in lockstep with internationally recognized bodies of knowledge like PMBOK\u00ae and BABOK\u00ae, and with the mandates that U.S. federal agencies are required to operate under in the Program Management Improvement and Accountability Act of 2015."
+      ]
+    },
+    {
+      "id": "program-resourcing",
+      "title": "Program Resourcing",
+      "icon": "/images/solutions/ProgRes.png",
+      "description": "Main Sail's extensive industry experience and network of highly skilled professionals allow us to understand and address our clients' specific requirements and find the right candidates to support their unique resourcing needs."
+    },
+    {
+      "id": "systems-engineering-and-integration",
+      "title": "Systems Engineering & Integration",
+      "icon": "/images/solutions/SEI.png",
+      "description": "Main Sail provides system engineering and integration solutions that combine system subcomponents to form complete system configurations that ensure cross-functionality and efficiency. We not only work on the design process but can also provide the necessary implementation support to accomplish complex integrations.",
+      "additionalText": "Our system integration engineers specialize in providing complete solutions in the following areas:",
+      "bullets": [
+        "Microsoft Architecture",
+        "Disaster Recovery",
+        "Radio-Frequency Identification",
+        "Virtualization",
+        "Custom Software Development",
+        "Enterprise and System Architecture",
+        "System Requirement Analysis"
+      ]
+    }
+  ]
+}
