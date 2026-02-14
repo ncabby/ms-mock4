@@ -23,7 +23,6 @@ interface Subsection {
 interface Solution {
   id: string;
   title: string;
-  icon: string;
   description: string;
   image?: string;
   bullets?: (string | BulletItem)[];
@@ -69,24 +68,8 @@ export default function SolutionBlock({ solution, index }: SolutionBlockProps) {
       id={solution.id}
       className={`py-12 ${index > 0 ? "border-t border-navy-200" : ""}`}
     >
-      <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
-        {/* Icon column */}
-        <div
-          className={`flex justify-center ${
-            isEven ? "lg:order-1" : "lg:order-2"
-          }`}
-        >
-          <Image
-            src={solution.icon}
-            alt={solution.title}
-            width={200}
-            height={200}
-            className="h-auto w-40 lg:w-48"
-          />
-        </div>
-
-        {/* Text column */}
-        <div className={isEven ? "lg:order-2" : "lg:order-1"}>
+      <div>
+        <div>
           <h2 className="mb-4 text-2xl font-bold text-navy-900 sm:text-3xl">
             {solution.title}
           </h2>

@@ -6,7 +6,6 @@
     {
       "id": "business-process-management",
       "title": "Business Process Management",
-      "icon": "/images/solutions/BPM-1.png",
       "description": "Main Sail helps businesses evaluate business issues and develop and implement solutions through Business Process Management (BPM), which is defined as the application of both methodology and technology to optimize business processes for achieving enterprise goals. In an era of rapidly changing environments, BPM is emerging as an essential enterprise-wide discipline that significantly improves management's capability to react quickly to events that impact the business.",
       "subsections": [
         {
@@ -27,7 +26,6 @@
     {
       "id": "cybersecurity",
       "title": "Cybersecurity",
-      "icon": "/images/solutions/Cyb.png",
       "description": "Main Sail's Cybersecurity team has more than 30 years of experience with providing analysis, solution design, and delivery services across a broad spectrum of cybersecurity environments and requirements.",
       "bullets": [
         {
@@ -122,7 +120,6 @@
     {
       "id": "enterprise-resource-planning",
       "title": "Enterprise Resource Planning",
-      "icon": "/images/solutions/ERP.png",
       "description": "Main Sail's Enterprise Resource Planning (ERP) teams specialize in ERP full lifecycle management from solution architecture and design, to deployment, sustainment, and modernization in challenging federal and commercial environments.",
       "image": "/images/general/Main_Sail_ERP2-1.png",
       "additionalText": "We utilize many of the industry standard programs, including, but not limited to:",
@@ -138,21 +135,17 @@
     {
       "id": "intelligent-enterprise",
       "title": "Intelligent Enterprise",
-      "icon": "/images/solutions/IE.png",
       "description": "Main Sail assists businesses with their Intelligent Enterprise (IE) strategy. IE has enabled companies to virtually address connections that result in enhanced agility, scalability and optimization of business processes. IE allows businesses to combine technology with analytics to generate value in a manner not available on this scale before.",
       "bullets": [
         "IoT – extend internet connectivity beyond what are considered traditional devices to a wide range of devices that utilize embedded technology to communicate and interact with the external environment, all via the Internet.",
         "Data Analytics – develop qualitative and quantitative techniques and processes to enhance productivity and business gains. Data is extracted and categorized to identify and analyze behavioral data and patterns, and techniques vary according to each organizational requirement.",
-        "Blockchain – tap into secure, distributed ledger technologies that can be simultaneously shared and accessed across public and private business networks for smart contracts, financial, supply chain, and identity management solutions.",
-        "Machine Learning – use the science of getting machines to learn and act in a similar way to humans while also autonomously learning from real-world interactions and sets of teaching data that we feed them.",
-        "Big Data – process a massive volume of both structured and unstructured data that is difficult to manage using traditional database and software techniques.",
+"Big Data – process a massive volume of both structured and unstructured data that is difficult to manage using traditional database and software techniques.",
         "Robotic Process Automation (RPA) – lower costs and improve efficiency through automation of business processes and tedious, time-consuming work. Combine RPA and Artificial Intelligence (AI) to create intelligent and intuitive solutions to both every day and complex business problems."
       ]
     },
     {
       "id": "low-code-development",
       "title": "Low-Code Development",
-      "icon": "/images/solutions/Picture5-e1634227746651.png",
       "description": "",
       "subsections": [
         {
@@ -166,7 +159,7 @@
         {
           "heading": "Low-Code Details",
           "bullets": [
-            "Gartner, Inc. predicts that by 2024, low-code application development will be responsible for more than 65% of application development activity.",
+            "Gartner, Inc. finds low-code application development is currently responsible for more than 65% of application development activity.",
             "This article provides an overview of several low-code platforms along with industry information.",
             "Main Sail has a development team experienced with both the Appian and Mendix Platforms. Contact us for additional information on how we can assist your development team."
           ],
@@ -182,7 +175,6 @@
     {
       "id": "maintenance-design-analytics",
       "title": "Maintenance Design Analytics",
-      "icon": "/images/solutions/MDA.png",
       "description": "Main Sail is an authorized service provider for PHM Technology's powerful Maintenance Aware Design Environment (MADe).",
       "additionalText": "MADe is an advanced, model-based decision support solution for complex engineering systems. Its full-service suite supports design optimization, risk analysis, cost estimation, reliability and maintainability studies and more. MADe works by modeling complex systems, functions and flow as engineering block diagrams, with each component and connection representing key attributes and parameters of the system. MADe improves the quality of decision-making at every step of a system's lifecycle (Bid / Proposal, Acquisition, Design, and Sustainment / Asset Management). Key workflow features include:",
       "image": "/images/general/MADe2.png",
@@ -217,7 +209,6 @@
     {
       "id": "program-and-project-management",
       "title": "Program & Project Management",
-      "icon": "/images/solutions/PPM.png",
       "description": "Main Sail applies proven and standardized Program and Project Management tools in concert with rigorous change management processes to fuel the success of organizations in managing multiple projects, and navigating complex activities that span functions, customers, and product lines.",
       "additionalText": "Our seasoned practitioners are certified and experienced in project management methodologies that integrate globally accepted best practices with business-specific processes and techniques across both public and private industry. This includes a wide spectrum of value delivery approaches – predictive, iterative, incremental, agile, hybrid, theory of constraints, critical chain, and next generation paradigms.",
       "bulletIntro": "We assist our clients in applying these approaches to:",
@@ -240,13 +231,11 @@
     {
       "id": "program-resourcing",
       "title": "Program Resourcing",
-      "icon": "/images/solutions/ProgRes.png",
       "description": "Main Sail's extensive industry experience and network of highly skilled professionals allow us to understand and address our clients' specific requirements and find the right candidates to support their unique resourcing needs."
     },
     {
       "id": "systems-engineering-and-integration",
       "title": "Systems Engineering & Integration",
-      "icon": "/images/solutions/SEI.png",
       "description": "Main Sail provides system engineering and integration solutions that combine system subcomponents to form complete system configurations that ensure cross-functionality and efficiency. We not only work on the design process but can also provide the necessary implementation support to accomplish complex integrations.",
       "additionalText": "Our system integration engineers specialize in providing complete solutions in the following areas:",
       "bullets": [
