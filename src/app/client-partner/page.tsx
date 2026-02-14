@@ -1,8 +1,41 @@
+import PageHero from "@/components/shared/PageHero";
+import LogoGrid from "@/components/shared/LogoGrid";
+import clientsData from "../../../content/pages/clients.json";
+
 export default function ClientPartnerPage() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-20">
-      <h1 className="text-4xl font-bold text-navy-900">Client &amp; Partner</h1>
-      <p className="mt-4 text-navy-600">Page content coming soon.</p>
+    <main>
+      <PageHero
+        title={clientsData.pageTitle}
+        backgroundImage={clientsData.heroImage}
+      />
+
+      {/* Clients Section */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="mb-4 text-3xl font-bold text-navy-900">
+          {clientsData.clientsSection.title}
+        </h2>
+        <p className="mb-2 text-lg leading-relaxed text-navy-700">
+          {clientsData.clientsSection.intro}
+        </p>
+        <p className="mb-8 leading-relaxed text-navy-600">
+          {clientsData.clientsSection.description}
+        </p>
+        <LogoGrid logos={clientsData.clientsSection.clients} grayscale />
+      </section>
+
+      {/* Partners Section */}
+      <section className="bg-navy-50 py-16">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="mb-4 text-3xl font-bold text-navy-900">
+            {clientsData.partnersSection.title}
+          </h2>
+          <p className="mb-8 text-lg leading-relaxed text-navy-700">
+            {clientsData.partnersSection.intro}
+          </p>
+          <LogoGrid logos={clientsData.partnersSection.partners} />
+        </div>
+      </section>
     </main>
   );
 }
