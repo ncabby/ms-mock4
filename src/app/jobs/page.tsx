@@ -11,7 +11,7 @@ export default function JobsPage() {
       />
 
       <div className="mx-auto max-w-4xl px-4 py-16">
-        <h2 className="mb-6 text-3xl font-bold text-navy-900">
+        <h2 className="mb-6 text-2xl font-bold text-navy-900 sm:text-3xl">
           {jobsData.heading}
         </h2>
 

@@ -5,8 +5,8 @@ interface DataTableProps {
 
 export default function DataTable({ headers, rows }: DataTableProps) {
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse">
+    <div className="overflow-x-auto rounded-lg">
+      <table className="w-full min-w-[400px] border-collapse">
         <thead>
           <tr className="bg-navy-800 text-white">
             {headers.map((header) => (

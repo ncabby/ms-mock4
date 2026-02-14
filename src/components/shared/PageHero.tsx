@@ -22,7 +22,7 @@ export default function PageHero({ title, backgroundImage }: PageHeroProps) {
       ) : (
         <div className="absolute inset-0 bg-gradient-to-r from-navy-800 to-navy-900" />
       )}
-      <h1 className="relative z-10 text-center text-4xl font-bold text-white md:text-5xl">
+      <h1 className="relative z-10 px-4 text-center text-3xl font-bold text-white sm:text-4xl md:text-5xl">
         {title}
       </h1>
     </section>

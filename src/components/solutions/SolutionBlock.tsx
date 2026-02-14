@@ -87,7 +87,7 @@ export default function SolutionBlock({ solution, index }: SolutionBlockProps) {
 
         {/* Text column */}
         <div className={isEven ? "lg:order-2" : "lg:order-1"}>
-          <h2 className="mb-4 text-3xl font-bold text-navy-900">
+          <h2 className="mb-4 text-2xl font-bold text-navy-900 sm:text-3xl">
             {solution.title}
           </h2>
 

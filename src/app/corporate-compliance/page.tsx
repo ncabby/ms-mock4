@@ -5,7 +5,7 @@ export default function CorporateCompliancePage() {
   return (
     <main>
       <div className="mx-auto max-w-4xl px-4 py-16">
-        <h1 className="mb-10 text-4xl font-bold text-navy-900">
+        <h1 className="mb-10 text-3xl font-bold text-navy-900 sm:text-4xl">
           {complianceData.pageTitle}
         </h1>
 

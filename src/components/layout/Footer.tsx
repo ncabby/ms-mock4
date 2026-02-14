@@ -8,12 +8,12 @@ export function Footer() {
         {/* Main footer row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 text-sm">
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <a
               href={global.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-navy-200 hover:text-white transition-colors"
+              className="inline-flex items-center px-2 py-2 text-navy-200 hover:text-white transition-colors"
               aria-label="Facebook"
             >
               Facebook
@@ -22,7 +22,7 @@ export function Footer() {
               href={global.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-navy-200 hover:text-white transition-colors"
+              className="inline-flex items-center px-2 py-2 text-navy-200 hover:text-white transition-colors"
               aria-label="LinkedIn"
             >
               LinkedIn
@@ -31,7 +31,7 @@ export function Footer() {
               href={global.social.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-navy-200 hover:text-white transition-colors"
+              className="inline-flex items-center px-2 py-2 text-navy-200 hover:text-white transition-colors"
               aria-label="Twitter"
             >
               Twitter
@@ -41,7 +41,7 @@ export function Footer() {
           {/* Contact Us Link */}
           <Link
             href="/contact-us"
-            className="text-navy-200 hover:text-white transition-colors"
+            className="inline-flex items-center px-2 py-2 text-navy-200 hover:text-white transition-colors"
           >
             Contact Us
           </Link>
@@ -49,7 +49,7 @@ export function Footer() {
           {/* Phone */}
           <a
             href={global.phoneTel}
-            className="text-navy-200 hover:text-white transition-colors"
+            className="inline-flex items-center px-2 py-2 text-navy-200 hover:text-white transition-colors"
           >
             {global.phone}
           </a>

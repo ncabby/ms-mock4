@@ -22,9 +22,9 @@ export default function CybersecurityNewsPage() {
             alt=""
             width={64}
             height={64}
-            className="h-16 w-16"
+            className="h-12 w-12 shrink-0 sm:h-16 sm:w-16"
           />
-          <h1 className="text-4xl font-bold text-navy-900">
+          <h1 className="text-2xl font-bold text-navy-900 sm:text-3xl md:text-4xl">
             {cyberData.pageTitle}
           </h1>
         </div>

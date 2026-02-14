@@ -30,7 +30,7 @@ export default function ContractsPage() {
       <div className="mx-auto max-w-6xl px-4 py-16">
         {/* SeaPort-NxG Section */}
         <section className="mb-16">
-          <h2 className="mb-6 text-3xl font-bold text-navy-900">
+          <h2 className="mb-6 text-2xl font-bold text-navy-900 sm:text-3xl">
             {seaport.title}
           </h2>
           {seaport.description.map((para, i) => (
@@ -54,8 +54,8 @@ export default function ContractsPage() {
             <h4 className="mb-3 mt-8 text-xl font-semibold text-navy-800">
               {seaport.team.membersTitle}
             </h4>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
+            <div className="overflow-x-auto rounded-lg">
+              <table className="w-full min-w-[500px] border-collapse">
                 <thead>
                   <tr className="bg-navy-800 text-white">
                     <th className="px-4 py-3 text-left font-semibold">

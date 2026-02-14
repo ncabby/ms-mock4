@@ -6,7 +6,7 @@ export function NewsCards() {
   return (
     <section className="py-16">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
           {homeData.newsCards.map((card) => (
             <div
               key={card.title}

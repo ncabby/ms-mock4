@@ -50,7 +50,7 @@ export function MobileMenu({ items }: MobileMenuProps) {
         onClick={() => setIsOpen(true)}
         aria-label="Open navigation menu"
         aria-expanded={isOpen}
-        className="flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer"
+        className="flex flex-col justify-center items-center w-11 h-11 gap-1.5 cursor-pointer"
       >
         <span className="block w-6 h-0.5 bg-navy-800 rounded-full" />
         <span className="block w-6 h-0.5 bg-navy-800 rounded-full" />
@@ -80,7 +80,7 @@ export function MobileMenu({ items }: MobileMenuProps) {
           <button
             onClick={closeMenu}
             aria-label="Close navigation menu"
-            className="flex items-center justify-center w-10 h-10 cursor-pointer"
+            className="flex items-center justify-center w-11 h-11 cursor-pointer"
           >
             <span className="relative block w-6 h-6">
               <span className="absolute top-1/2 left-0 block w-6 h-0.5 bg-navy-800 rounded-full rotate-45 -translate-y-1/2" />
