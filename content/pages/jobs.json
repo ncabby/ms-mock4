@@ -1,0 +1,31 @@
+{
+  "pageTitle": "Jobs",
+  "heroImage": "/images/hero/Featured-Image-Jobs.jpg",
+  "heading": "Employment Opportunities",
+  "intro": "View our open employment opportunities and submit your resume here:",
+  "jobdivaLink": "https://www2.jobdiva.com/portal/?a=dojdnwwnfiel9lklpfn9szx03u16fa030ftuqrlg7hm5wo7qnqryscke4xbcp7wq&compid=-1#/",
+  "jobdivaBadge": "/images/general/jobs2-1-300x279-1.png",
+  "description": [
+    "We can describe a typical career path with Main Sail, but that's not what makes us different, unique and distinctive. We foster an entrepreneurial environment that encourages individual contribution. Main Sail is an organization that not only values your professional job skills, but your ideas too. We hope you will join our team not just for a single employment opportunity, but for a long-term career. We're looking for individuals that will grow right along with our organization.",
+    "Main Sail consistently offers employment opportunities to talented high-performing individuals looking for a career in the technical areas included in our Solutions section."
+  ],
+  "benefitsIntro": "We'll provide challenging jobs at our Fortune 500 and Public Sector clients, plus opportunities for personal and professional growth. Our employment opportunities also come with a generous benefits program, which includes:",
+  "benefits": [
+    "Market-based compensation",
+    "Project performance bonus",
+    "Billable hours incentive bonus",
+    "Paid vacation",
+    "Paid time off (PTO)",
+    "Paid holidays",
+    "Major medical with prescription plan",
+    "Dental",
+    "Company paid long term disability",
+    "401(k) with matching program",
+    "Company paid term life and AD&D",
+    "Continuous training",
+    "Flexible spending account",
+    "Bi-weekly payroll and expense reimbursement"
+  ],
+  "closingText": "If you're looking for a job opportunity at an organization that is on the move, rewards achievements, and values job experience, please forward your resume to",
+  "resumeEmail": "resumes@mainsailgroup.com"
+}
