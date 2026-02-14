@@ -6,13 +6,6 @@ import contractsData from "../../../content/pages/contracts.json";
 export default function ContractsPage() {
   const { seaport, gsa, bottomLinks } = contractsData;
 
-  // Build team members table rows with website links rendered as HTML strings
-  const memberHeaders = ["Partner", "Website"];
-  const memberRows = seaport.team.members.map((m) => [
-    m.partner,
-    m.website || "—",
-  ]);
-
   // Build task orders table
   const taskOrderHeaders = ["Solicitation", "TO Number"];
   const taskOrderRows = seaport.taskOrders.orders.map((o) => [
