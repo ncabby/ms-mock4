@@ -1,0 +1,46 @@
+{
+  "pageTitle": "CMMC 2.0",
+  "icon": "/images/solutions/Picture5-e1634227746651.png",
+  "sections": [
+    {
+      "title": "CMMC 2.0 – What Does it Mean for Your Organization?",
+      "paragraphs": [
+        "As you may have heard, The Defense Department has recently revamped its cybersecurity standard for defense contractors.  Cybersecurity Maturity Model Certification (CMMC) 2.0, announced November 4, promises a new direction for protecting federal contract information and controlled unclassified information (CUI).",
+        "Main Sail's updated CMMC 2.0 Guide provides everything you need to know to effectively prepare for Cybersecurity Maturity Model Certification 2.0.",
+        "During the period of approval of CMMC 2.0, the 110 requirements associated with NIST 800-171 that have been on the books for years now, under the DFARS 7012 clause will still apply to CMMC 2.0 when approved. So now is a good time to take this opportunity to start addressing those 110 requirements now so that when the final rule is in effect, you will be set for success.",
+        "All companies are encouraged to start to improve their cybersecurity with the implementation of NIST 800-171.  The DOD has continued to stress that it hopes companies are not waiting for a contractual requirement to take charge of their cybersecurity.",
+        "NIST provides best practices, guidance and reference for how to reduce cyber incidents.  Main Sail has a well-experienced team that can assist your organization with the process to implement the 110 requirements of NIST 800-171.  The implementation is not a trivial process.  However, when completed, the requirements will position your organization with a strong cybersecurity posture that could put you ahead of your competition. Contact us today at mainsail@mainsailgroup.com for more information."
+      ],
+      "links": [
+        {
+          "text": "Main Sail's updated CMMC 2.0 Guide",
+          "href": "https://www.mainsailgroup.com/wp-content/uploads/2025/05/CMMC-2.0.pdf"
+        }
+      ]
+    },
+    {
+      "title": "C3PAO Designation",
+      "paragraphs": [
+        "Main Sail has been designated as a Candidate for the CMMC 3rd Party Assessment Organization (C3PAO) authorization.  Once we become a C3PAO, Main Sail will be authorized to conduct the CMMC audits for organizations seeking the certification."
+      ],
+      "image": "/images/general/C3PAO.png"
+    },
+    {
+      "title": "Additional Resources",
+      "paragraphs": [
+        "The updates for CMMC 2.0 are detailed in this Acquisition and Sustainment site.",
+        "Here is further detail about the proposed rule for CMMC 2.0."
+      ],
+      "links": [
+        {
+          "text": "Acquisition and Sustainment",
+          "href": "https://www.acq.osd.mil/asda/dpc/cp/cyber/cmmc.html"
+        },
+        {
+          "text": "proposed rule for CMMC 2.0.",
+          "href": "https://www.federalregister.gov/documents/2021/11/17/2021-24880/cybersecurity-maturity-model-certification-cmmc-20-updates-and-way-forward"
+        }
+      ]
+    }
+  ]
+}
