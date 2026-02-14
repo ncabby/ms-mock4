@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Contact Us",
+  "phone": "(216) 472-5100",
+  "phoneTel": "tel:2164725100",
+  "fax": "(216) 472-5110",
+  "email": "mainsail@mainsailgroup.com",
+  "address": {
+    "company": "Main Sail LLC",
+    "street": "8279 Mayfield Road, Unit 12",
+    "city": "Chesterland",
+    "state": "OH",
+    "zip": "44026"
+  },
+  "parkingNote": "Our parking lot is located directly on Mayfield Road, east of Lynn Drive.",
+  "mapCoordinates": {
+    "lat": 41.5105,
+    "lng": -81.3340
+  }
+}
