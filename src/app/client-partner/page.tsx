@@ -21,7 +21,7 @@ export default function ClientPartnerPage() {
         <p className="mb-8 leading-relaxed text-navy-600">
           {clientsData.clientsSection.description}
         </p>
-        <LogoGrid logos={clientsData.clientsSection.clients} grayscale />
+        <LogoGrid logos={clientsData.clientsSection.clients} />
       </section>
 
       {/* Partners Section */}
