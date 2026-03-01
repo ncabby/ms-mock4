@@ -12,33 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
   setActiveNavLink();
 });
 
-/* --- Sticky Header with scroll detection --- */
+/* --- Sticky Header --- */
 function initHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
-  const isHomepage = header.classList.contains('is-transparent');
-  let lastScroll = 0;
-
-  function onScroll() {
-    const scrollY = window.scrollY;
-    if (isHomepage) {
-      if (scrollY > 80) {
-        header.classList.add('is-scrolled');
-        header.classList.remove('is-transparent');
-      } else {
-        header.classList.remove('is-scrolled');
-        header.classList.add('is-transparent');
-      }
-    } else {
-      // Inner pages: always show solid header
-      header.classList.add('is-scrolled');
-    }
-    lastScroll = scrollY;
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  // All pages: always show solid white header
+  header.classList.add('is-scrolled');
 }
 
 /* --- Mobile Navigation --- */
@@ -175,21 +155,26 @@ function initScrollReveal() {
 /* --- Logo Tickers --- */
 function initTickers() {
   document.querySelectorAll('.ticker-track').forEach(track => {
-    const items = track.children;
-    if (!items.length) return;
+    const origItems = Array.from(track.children);
+    if (!origItems.length) return;
 
-    // Clone items for seamless loop
-    const fragment = document.createDocumentFragment();
-    Array.from(items).forEach(item => {
-      fragment.appendChild(item.cloneNode(true));
-    });
-    track.appendChild(fragment);
+    // Clone enough sets so the track always fills the viewport seamlessly
+    const viewportWidth = window.innerWidth;
+    const gap = parseFloat(getComputedStyle(track).gap || 0);
+    let setWidth = origItems.reduce((w, el) => w + el.offsetWidth, 0)
+                   + origItems.length * gap;
+    const copies = Math.max(2, Math.ceil((viewportWidth * 2) / setWidth));
 
-    // Calc duration based on content width
-    const totalWidth = track.scrollWidth / 2;
+    for (let i = 0; i < copies; i++) {
+      origItems.forEach(item => track.appendChild(item.cloneNode(true)));
+    }
+
+    // Calc duration and offset: animate exactly one set's worth of width
+    const oneSetWidth = track.scrollWidth / (copies + 1);
     const speed = 50; // px per second
-    const duration = totalWidth / speed;
+    const duration = oneSetWidth / speed;
     track.style.setProperty('--ticker-duration', `${duration}s`);
+    track.style.setProperty('--ticker-offset', `-${oneSetWidth}px`);
   });
 }
 
