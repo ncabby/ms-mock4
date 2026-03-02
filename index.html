@@ -195,13 +195,14 @@
   <!-- ========== HERO ========== -->
   <section class="hero">
     <div class="hero-bg">
+      <canvas id="hero-canvas" class="hero-webgl-canvas"></canvas>
       <div class="grain-overlay"></div>
     </div>
     <div class="container">
       <div class="hero-content reveal">
         <span class="badge badge-light" style="margin-bottom:var(--space-lg);">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Service-Disabled Veteran-Owned Small Business
+          Veteran-Owned Small Business
         </span>
         <h1>Accelerating Digital Transformation Through Strategic IT Solutions</h1>
         <p>Main Sail partners with government agencies and commercial enterprises to modernize operations, streamline technology, and deliver measurable outcomes through expert consulting and implementation services.</p>
@@ -224,55 +225,45 @@
       </div>
 
       <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-xl);">
-        <div class="card reveal reveal-delay-1">
+        <a href="/capabilities#digital-engineering-manufacturing" class="card reveal reveal-delay-1">
+          <img src="brand_assets/capabilities-photos/digital-engineering.png" alt="Digital Engineering & Manufacturing" class="card-img">
           <div class="card-body">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
             <h3>Digital Engineering & Manufacturing</h3>
             <p>Smart factory design, model-based engineering, and digital thread solutions that bridge physical and digital worlds.</p>
           </div>
-        </div>
+        </a>
 
-        <div class="card reveal reveal-delay-2">
+        <a href="/capabilities#digital-supply-chain" class="card reveal reveal-delay-2">
+          <img src="brand_assets/capabilities-photos/digital-supply-chain.png" alt="Digital Supply Chain" class="card-img">
           <div class="card-body">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-            </div>
             <h3>Digital Supply Chain</h3>
             <p>End-to-end supply chain visibility, planning optimization, and logistics digitization to reduce cost and risk.</p>
           </div>
-        </div>
+        </a>
 
-        <div class="card reveal reveal-delay-3">
+        <a href="/capabilities#enterprise-technology-transformation" class="card reveal reveal-delay-3">
+          <img src="brand_assets/capabilities-photos/enterprise-tech.png" alt="Enterprise Technology & Transformation" class="card-img">
           <div class="card-body">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-            </div>
             <h3>Enterprise Technology & Transformation</h3>
             <p>Infrastructure modernization, cloud migration, and platform engineering for resilient, scalable enterprise environments.</p>
           </div>
-        </div>
+        </a>
 
-        <div class="card reveal reveal-delay-4">
+        <a href="/capabilities#data-analytics" class="card reveal reveal-delay-4">
+          <img src="brand_assets/capabilities-photos/data-analytics.png" alt="Data & Analytics" class="card-img">
           <div class="card-body">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/><path d="M18 12a2 2 0 000 4h4v-4h-4z"/></svg>
-            </div>
             <h3>Data & Analytics</h3>
             <p>Business intelligence, data warehousing, and advanced analytics that turn raw data into strategic advantage.</p>
           </div>
-        </div>
+        </a>
 
-        <div class="card reveal reveal-delay-5">
+        <a href="/capabilities#program-support" class="card reveal reveal-delay-5">
+          <img src="brand_assets/capabilities-photos/program-support.png" alt="Program Support" class="card-img">
           <div class="card-body">
-            <div class="card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-            </div>
             <h3>Program Support</h3>
             <p>Strategic advisory, project management, and organizational change management for complex federal and commercial programs.</p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -499,11 +490,12 @@
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
         <span>&copy; 2026 Main Sail Technology Solutions. All rights reserved.</span>
-        <span>ISO 9001:2015 Certified &middot; SDVOSB</span>
+        <span>ISO 9001:2015</span>
       </div>
     </div>
   </footer>
 
   <script src="/js/main.js"></script>
+  <script src="/js/hero-webgl.js"></script>
 </body>
 </html>
