@@ -215,9 +215,23 @@ function setActiveNavLink() {
   const path = window.location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
   const currentPage = path === '' ? '/' : path;
 
+  const offeringSlugs = [
+    '/digital-engineering-manufacturing',
+    '/digital-maintenance-logistics',
+    '/enterprise-it',
+    '/data-analytics',
+    '/program-support'
+  ];
+
   document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
     const href = link.getAttribute('href')?.replace(/\.html$/, '').replace(/\/$/, '') || '/';
     const linkPage = href === '' ? '/' : href;
+
+    // Mark "What We Do" trigger as active on any offering sub-page
+    if (link.classList.contains('nav-dropdown-trigger') && offeringSlugs.includes(currentPage)) {
+      link.classList.add('is-active');
+      return;
+    }
 
     if (linkPage === currentPage ||
         (currentPage !== '/' && linkPage !== '/' && currentPage.startsWith(linkPage))) {

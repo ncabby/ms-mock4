@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Insights — Main Sail Technology Solutions</title>
+  <meta name="description" content="Latest contract awards, partnership announcements, and expert perspectives on digital transformation from the Main Sail team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* --- Filter Tabs --- */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-3xl);
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.625rem 1.5rem;
+      border-radius: 100px;
+      border: 2px solid var(--ms-dark-20);
+      background: transparent;
+      color: var(--ms-dark-70);
+      cursor: pointer;
+      transition: border-color var(--duration-fast) var(--ease-smooth),
+                  color var(--duration-fast) var(--ease-smooth),
+                  background-color var(--duration-fast) var(--ease-smooth),
+                  transform var(--duration-normal) var(--ease-spring);
+    }
+
+    .filter-btn:hover {
+      border-color: var(--ms-bright);
+      color: var(--ms-bright);
+      transform: translateY(-1px);
+    }
+
+    .filter-btn:focus-visible {
+      outline: 3px solid var(--ms-bright);
+      outline-offset: 2px;
+    }
+
+    .filter-btn.is-active {
+      background: var(--ms-bright);
+      border-color: var(--ms-bright);
+      color: var(--ms-white);
+    }
+
+    .filter-btn .filter-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      margin-left: 0.375rem;
+      background: var(--ms-dark-10);
+      color: var(--ms-dark-70);
+    }
+
+    .filter-btn.is-active .filter-count {
+      background: rgba(255,255,255,0.25);
+      color: var(--ms-white);
+    }
+
+    /* --- Insight badge variant --- */
+    .article-card-tag--insight {
+      background: linear-gradient(135deg, rgba(32,75,87,0.12), rgba(32,75,87,0.06));
+      color: var(--ms-dark);
+    }
+
+    /* --- Card type indicator line --- */
+    .article-card[data-type="news"] {
+      border-top: 3px solid var(--ms-bright);
+    }
+
+    .article-card[data-type="insight"] {
+      border-top: 3px solid var(--ms-dark);
+    }
+
+    /* --- Card filter animation --- */
+    .article-card {
+      transition: transform var(--duration-normal) var(--ease-spring),
+                  box-shadow var(--duration-normal) var(--ease-smooth),
+                  opacity var(--duration-normal) var(--ease-smooth);
+    }
+
+    .article-card.is-hidden {
+      display: none;
+    }
+
+    /* --- Section divider --- */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-xl);
+    }
+
+    .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--ms-dark-10);
+    }
+
+    .section-divider span {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--ms-dark-50);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header is-scrolled" role="banner">
+    <div class="header-inner">
+      <a href="/" class="site-logo" aria-label="Main Sail Home">
+        <img src="/brand_assets/main_sail_logo.png" alt="Main Sail">
+      </a>
+
+      <nav class="desktop-nav" role="navigation" aria-label="Main navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <div style="position:relative;">
+          <a href="/digital-engineering-manufacturing" class="nav-link nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            What We Do
+            <svg class="chevron" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="mega-dropdown" role="menu">
+            <div class="mega-dropdown-grid">
+              <a href="/digital-engineering-manufacturing" class="mega-dropdown-item" role="menuitem">
+                <div class="mega-dropdown-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="mega-dropdown-text">
+                  <h4>Digital Engineering & Manufacturing</h4>
+                  <p>Smart factory solutions and digital thread</p>
+                </div>
+              </a>
+              <a href="/digital-maintenance-logistics" class="mega-dropdown-item" role="menuitem">
+                <div class="mega-dropdown-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                </div>
+                <div class="mega-dropdown-text">
+                  <h4>Digital Maintenance &amp; Logistics</h4>
+                  <p>Predictive maintenance and logistics optimization</p>
+                </div>
+              </a>
+              <a href="/enterprise-it" class="mega-dropdown-item" role="menuitem">
+                <div class="mega-dropdown-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                </div>
+                <div class="mega-dropdown-text">
+                  <h4>Enterprise IT</h4>
+                  <p>Modernize infrastructure and platforms</p>
+                </div>
+              </a>
+              <a href="/data-analytics" class="mega-dropdown-item" role="menuitem">
+                <div class="mega-dropdown-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/><path d="M18 12a2 2 0 000 4h4v-4h-4z"/></svg>
+                </div>
+                <div class="mega-dropdown-text">
+                  <h4>Data & Analytics</h4>
+                  <p>Transform data into actionable intelligence</p>
+                </div>
+              </a>
+              <a href="/program-support" class="mega-dropdown-item" role="menuitem">
+                <div class="mega-dropdown-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <div class="mega-dropdown-text">
+                  <h4>Program Support</h4>
+                  <p>Strategic program management and advisory</p>
+                </div>
+              </a>
+              <a href="/intelligent-automation" class="mega-dropdown-item" role="menuitem"><div class="mega-dropdown-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8 6a4 4 0 018 0"/><path d="M12 18v4"/><path d="M8 22h8"/><rect x="6" y="10" width="12" height="8" rx="2"/></svg></div><div class="mega-dropdown-text"><h4>Intelligent Automation</h4><p>RPA, AI workflows, and process orchestration</p></div></a>
+            </div>
+          </div>
+        </div>
+
+
+        <a href="/contract-vehicles" class="nav-link">Contract Vehicles</a>
+        <a href="/news-insights" class="nav-link is-active">News & Insights</a>
+        <a href="/careers" class="nav-link">Careers</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="/contact" class="btn btn-primary btn-sm">Contact Us</a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Panel -->
+  <div class="mobile-nav-overlay"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <button class="mobile-accordion-btn" aria-expanded="false">
+      What We Do
+      <svg class="chevron" width="16" height="16" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="mobile-accordion-panel">
+      <a href="/digital-engineering-manufacturing">Digital Engineering & Manufacturing</a>
+      <a href="/digital-maintenance-logistics">Digital Maintenance &amp; Logistics</a>
+      <a href="/enterprise-it">Enterprise IT</a>
+      <a href="/data-analytics">Data & Analytics</a>
+      <a href="/program-support">Program Support</a>
+      <a href="/intelligent-automation">Intelligent Automation</a>
+    </div>
+    <a href="/contract-vehicles" class="mobile-nav-link">Contract Vehicles</a>
+    <a href="/news-insights" class="mobile-nav-link">News & Insights</a>
+    <a href="/careers" class="mobile-nav-link">Careers</a>
+    <div class="mobile-nav-cta">
+      <a href="/contact" class="btn btn-primary" style="width:100%;">Contact Us</a>
+    </div>
+  </nav>
+
+
+  <!-- ========== SHORT HERO ========== -->
+  <section class="hero hero-short">
+    <div class="hero-bg">
+      <img src="/brand_assets/solutions-bg.jpg" alt="" class="hero-bg-img" style="opacity:0.35;">
+      <div class="grain-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1>News & Insights</h1>
+        <p>Contract awards, partnership announcements, and expert perspectives on digital transformation from our team.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FEATURED ARTICLE ========== -->
+  <section class="section" style="background: var(--ms-white);">
+    <div class="container">
+      <div class="featured-article reveal">
+        <div class="featured-article-image">
+          <img src="https://placehold.co/800x500/204B57/ffffff?text=Featured+News" alt="Main Sail Awarded SeaPort-NxG Task Order">
+        </div>
+        <div class="featured-article-body">
+          <div class="article-card-meta">
+            <span class="article-card-tag">Contract Award</span>
+            <span>February 15, 2026</span>
+          </div>
+          <h2>Main Sail Awarded $12M SeaPort-NxG Task Order for Digital Engineering Services</h2>
+          <p style="color:var(--ms-dark-70); font-size:1.0625rem; margin-bottom:var(--space-xl);">Main Sail Technology Solutions has been awarded a multi-year task order under the SeaPort-NxG contract vehicle to provide digital engineering and model-based systems engineering support to the Naval Sea Systems Command.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+
+      <!-- ========== FILTER TABS ========== -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn is-active" data-filter="all">All<span class="filter-count">12</span></button>
+        <button class="filter-btn" data-filter="news">News<span class="filter-count">6</span></button>
+        <button class="filter-btn" data-filter="insight">Insights<span class="filter-count">6</span></button>
+      </div>
+
+
+      <!-- ========== COMBINED CARD GRID ========== -->
+      <div class="article-grid" id="articles-grid">
+
+        <!-- Insight 1 — Feb 2026 -->
+        <article class="article-card reveal" data-type="insight">
+          <div class="article-card-image">
+            <img src="/brand_assets/digital-thread.jpg" alt="Digital Thread in Defense Manufacturing">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(32,75,87,0.5) 0%, transparent 60%);"></div>
+          </div>
+          <div class="article-card-body">
+            <span class="article-card-tag article-card-tag--insight">Insight</span>
+            <div class="article-card-meta">
+              <span>Feb 2026</span>
+              <span>8 min read</span>
+            </div>
+            <h3><a href="#">The Digital Thread: Connecting Design to Sustainment in Defense Manufacturing</a></h3>
+            <p>How model-based engineering and digital thread architectures are transforming the way defense contractors manage product data across the entire lifecycle.</p>
+            <div class="article-card-author">
+              <img src="https://placehold.co/64x64/C2B8B2/204B57?text=MT" alt="Michael Torres">
+              <span>Michael Torres, Principal Consultant</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- News 1 — Jan 2026 -->
+        <article class="article-card reveal reveal-delay-1" data-type="news">
+          <div class="article-card-image">
+            <img src="https://placehold.co/600x400/125E8A/ffffff?text=SAP+Partnership" alt="Main Sail Expands SAP Partnership">
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="article-card-tag">News</span>
+              <span>January 2026</span>
+            </div>
+            <h3><a href="#">Main Sail Expands SAP Partnership with New S/4HANA Center of Excellence</a></h3>
+            <p>Main Sail has deepened its strategic partnership with SAP by launching a dedicated S/4HANA Center of Excellence, providing accelerated migration paths and specialized expertise for federal and commercial clients.</p>
+          </div>
+        </article>
+
+        <!-- Insight 2 — Jan 2026 -->
+        <article class="article-card reveal reveal-delay-2" data-type="insight">
+          <div class="article-card-image">
+            <img src="/brand_assets/sap-migration.jpg" alt="S/4HANA Migration Readiness">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(32,75,87,0.5) 0%, transparent 60%);"></div>
+          </div>
+          <div class="article-card-body">
+            <span class="article-card-tag article-card-tag--insight">Insight</span>
+            <div class="article-card-meta">
+              <span>Jan 2026</span>
+              <span>6 min read</span>
+            </div>
+            <h3><a href="#">Five Signs Your Organization Is Ready for an S/4HANA Migration</a></h3>
+            <p>Still running ECC? Here's how to evaluate your readiness for SAP's next-generation ERP platform and avoid the common pitfalls of migration.</p>
+            <div class="article-card-author">
+              <img src="https://placehold.co/64x64/C2B8B2/204B57?text=SC" alt="Sarah Chen">
+              <span>Sarah Chen, SAP Practice Lead</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Insight 3 — Jan 2026 -->
+        <article class="article-card reveal" data-type="insight">
+          <div class="article-card-image">
+            <img src="/brand_assets/ai-federal-it.jpg" alt="AI Applications in Federal IT">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(32,75,87,0.5) 0%, transparent 60%);"></div>
+          </div>
+          <div class="article-card-body">
+            <span class="article-card-tag article-card-tag--insight">Insight</span>
+            <div class="article-card-meta">
+              <span>Jan 2026</span>
+              <span>10 min read</span>
+            </div>
+            <h3><a href="#">Beyond the Hype: Practical AI Applications in Federal IT</a></h3>
+            <p>A pragmatic look at where machine learning and AI deliver real ROI in government operations, from document processing to predictive maintenance.</p>
+            <div class="article-card-author">
+              <img src="https://placehold.co/64x64/C2B8B2/204B57?text=DP" alt="David Park">
+              <span>David Park, AI Solutions Architect</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- News 2 — Dec 2025 -->
+        <article class="article-card reveal reveal-delay-1" data-type="news">
+          <div class="article-card-image">
+            <img src="https://placehold.co/600x400/197BBD/ffffff?text=ISO+Certification" alt="Main Sail Achieves ISO 9001:2015 Recertification">
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="article-card-tag">News</span>
+              <span>December 2025</span>
+            </div>
+            <h3><a href="#">Main Sail Achieves ISO 9001:2015 Recertification</a></h3>
+            <p>Main Sail has successfully completed its ISO 9001:2015 recertification audit, reaffirming the company's commitment to quality management standards across all service delivery areas.</p>
+          </div>
+        </article>
+
+        <!-- Insight 4 — Dec 2025 -->
+        <article class="article-card reveal reveal-delay-2" data-type="insight">
+          <div class="article-card-image">
+            <img src="/brand_assets/zero-trust.jpg" alt="Zero Trust Architecture">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(32,75,87,0.5) 0%, transparent 60%);"></div>
+          </div>
+          <div class="article-card-body">
+            <span class="article-card-tag article-card-tag--insight">Insight</span>
+            <div class="article-card-meta">
+              <span>Dec 2025</span>
+              <span>7 min read</span>
+            </div>
+            <h3><a href="#">Zero Trust Architecture: A Practical Implementation Roadmap</a></h3>
+            <p>Moving beyond the buzzword. A step-by-step approach to implementing zero trust principles in complex enterprise environments.</p>
+            <div class="article-card-author">
+              <img src="https://placehold.co/64x64/C2B8B2/204B57?text=LN" alt="Lisa Nowak">
+              <span>Lisa Nowak, Security Practice Lead</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- News 3 — Nov 2025 -->
+        <article class="article-card reveal" data-type="news">
+          <div class="article-card-image">
+            <img src="https://placehold.co/600x400/204B57/ffffff?text=GSA+Schedule" alt="GSA MAS Schedule Renewed Through 2026">
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="article-card-tag">News</span>
+              <span>November 2025</span>
+            </div>
+            <h3><a href="#">GSA MAS Schedule Renewed Through 2026</a></h3>
+            <p>Main Sail's GSA Multiple Award Schedule contract has been renewed, ensuring continued streamlined procurement access for federal agencies seeking IT professional services and solutions.</p>
+          </div>
+        </article>
+
+        <!-- Insight 5 — Nov 2025 -->
+        <article class="article-card reveal reveal-delay-1" data-type="insight">
+          <div class="article-card-image">
+            <img src="/brand_assets/supply-chain-twins.jpg" alt="Digital Twins in Supply Chain">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(32,75,87,0.5) 0%, transparent 60%);"></div>
+          </div>
+          <div class="article-card-body">
+            <span class="article-card-tag article-card-tag--insight">Insight</span>
+            <div class="article-card-meta">
+              <span>Nov 2025</span>
+              <span>5 min read</span>
+            </div>
+            <h3><a href="#">Digital Twins in Supply Chain: From Visibility to Predictability</a></h3>
+            <p>How organizations are using digital twin technology to simulate supply chain disruptions before they happen.</p>
+            <div class="article-card-author">
+              <img src="https://placehold.co/64x64/C2B8B2/204B57?text=JW" alt="James Wright">
+              <span>James Wright, Supply Chain Director</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- News 4 — Oct 2025 -->
+        <article class="article-card reveal reveal-delay-2" data-type="news">
+          <div class="article-card-image">
+            <img src="https://placehold.co/600x400/125E8A/ffffff?text=Conference" alt="Main Sail Presents at DoD Digital Engineering Conference">
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="article-card-tag">News</span>
+              <span>October 2025</span>
+            </div>
+            <h3><a href="#">Main Sail Presents at DoD Digital Engineering Conference</a></h3>
+            <p>Main Sail leadership presented key findings on model-based systems engineering adoption at the Department of Defense Digital Engineering Conference, sharing insights from recent naval modernization programs.</p>
+          </div>
+        </article>
+
+        <!-- Insight 6 — Oct 2025 -->
+        <article class="article-card reveal" data-type="insight">
+          <div class="article-card-image">
+            <img src="/brand_assets/evm-agile.jpg" alt="Earned Value Management in Agile">
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(32,75,87,0.5) 0%, transparent 60%);"></div>
+          </div>
+          <div class="article-card-body">
+            <span class="article-card-tag article-card-tag--insight">Insight</span>
+            <div class="article-card-meta">
+              <span>Oct 2025</span>
+              <span>6 min read</span>
+            </div>
+            <h3><a href="#">Earned Value Management in Agile Environments</a></h3>
+            <p>Bridging the gap between traditional EVM requirements and modern agile delivery methodologies in federal programs.</p>
+            <div class="article-card-author">
+              <img src="https://placehold.co/64x64/C2B8B2/204B57?text=AF" alt="Amanda Foster">
+              <span>Amanda Foster, Program Director</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- News 5 — Sep 2025 -->
+        <article class="article-card reveal reveal-delay-1" data-type="news">
+          <div class="article-card-image">
+            <img src="https://placehold.co/600x400/197BBD/ffffff?text=DC+Office" alt="Main Sail Opens New Office in Washington, D.C. Metro Area">
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="article-card-tag">News</span>
+              <span>September 2025</span>
+            </div>
+            <h3><a href="#">Main Sail Opens New Office in Washington, D.C. Metro Area</a></h3>
+            <p>To better serve its growing federal client base, Main Sail has opened a new office in the Washington, D.C. metro area, expanding the company's presence on the East Coast.</p>
+          </div>
+        </article>
+
+        <!-- News 6 — Aug 2025 -->
+        <article class="article-card reveal reveal-delay-2" data-type="news">
+          <div class="article-card-image">
+            <img src="https://placehold.co/600x400/204B57/ffffff?text=Siemens+Partner" alt="Siemens Teamcenter Platinum Partner Status Achieved">
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="article-card-tag">News</span>
+              <span>August 2025</span>
+            </div>
+            <h3><a href="#">Siemens Teamcenter Platinum Partner Status Achieved</a></h3>
+            <p>Main Sail has been elevated to Platinum Partner status within the Siemens Teamcenter ecosystem, recognizing the company's deep expertise in product lifecycle management implementation and support.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FINAL CTA BAND ========== -->
+  <section class="cta-band">
+    <div class="cta-band-bg">
+      <div class="grain-overlay" style="opacity:0.15;"></div>
+    </div>
+    <div class="container">
+      <div class="cta-band-content reveal">
+        <h2>Ready to Transform Your Organization?</h2>
+        <p>Let's discuss how Main Sail can help you modernize operations, reduce costs, and accelerate your digital transformation journey.</p>
+        <div style="display:flex; gap:var(--space-md); justify-content:center; flex-wrap:wrap;">
+          <a href="/contact" class="btn btn-white btn-lg">Start a Conversation</a>
+          <a href="/digital-engineering-manufacturing" class="btn btn-secondary btn-lg">Explore What We Do</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/brand_assets/main_sail_logo.png" alt="Main Sail">
+        <p>Accelerating digital transformation for government and enterprise clients through strategic IT consulting, implementation, and managed services.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/digital-engineering-manufacturing">What We Do</a>
+        <a href="/contract-vehicles">Contract Vehicles</a>
+        <a href="/news-insights">News & Insights</a>
+        <a href="/careers">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="/digital-engineering-manufacturing">Digital Engineering</a>
+        <a href="/digital-maintenance-logistics">Maintenance &amp; Logistics</a>
+        <a href="/enterprise-it">Enterprise IT</a>
+        <a href="/data-analytics">Data &amp; Analytics</a>
+        <a href="/program-support">Program Support</a>
+        <a href="/intelligent-automation">Intelligent Automation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Chesterland, OH</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>mainsail@mainsailgroup.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>(216) 472-5100</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span>&copy; 2026 Main Sail Technology Solutions. All rights reserved.</span>
+        <span>ISO 9001:2015 &middot; CMMC Level 2 Certified</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>
+    // Filter tabs
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('#articles-grid .article-card').forEach(card => {
+          if (filter === 'all' || card.dataset.type === filter) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

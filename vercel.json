@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/what-we-do", "destination": "/digital-engineering-manufacturing", "permanent": true },
+    { "source": "/enterprise-technology", "destination": "/enterprise-it", "permanent": true }
+  ]
 }

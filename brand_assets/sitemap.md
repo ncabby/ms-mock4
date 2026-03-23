@@ -3,23 +3,17 @@
 ## Main Navigation
 
 - Home (`/`)
-- Capabilities (`/capabilities`)
-  - Digital Engineering & Manufacturing (`/capabilities#digital-engineering-manufacturing`)
-  - Digital Supply Chain (`/capabilities#digital-supply-chain`)
-  - Enterprise Technology & Transformation (`/capabilities#enterprise-technology-transformation`)
-  - Data & Analytics (`/capabilities#data-analytics`)
-  - Program Support (`/capabilities#program-support`)
-- Solutions (`/solutions`)
-  - ERP Systems (`/solutions#erp-systems`)
-  - Digital Twins (`/solutions#digital-twins`)
-  - Product Lifecycle Management (`/solutions#product-lifecycle-management`)
-  - Automation (`/solutions#automation`)
-  - Artifical Intelligence (`/solutions#artificial-intelligence`)
+- What We Do (`/what-we-do`)
+  - Digital Engineering & Manufacturing (`/what-we-do#digital-engineering-manufacturing`)
+  - Digital Maintenance & Logistics (`/what-we-do#digital-maintenance-logistics`)
+  - Enterprise IT & Transformation (`/what-we-do#enterprise-it-transformation`)
+  - Data & Analytics (`/what-we-do#data-analytics`)
+  - Program Support (`/what-we-do#program-support`)
+- Solutions (removed — content retained on home page without links)
 - Contracts (`/contracts`)
 - Jobs (`/jobs`)
 - Contact Us (`/contact-us`)
-- News (`/news`)
-- Blog (`/blog`)
+- News & Insights (`/news-insights`)
 
 ## Horizonal Scrolling Tickers
 
