@@ -835,7 +835,7 @@ p {
 .card.card-icon:nth-child(3) { --card-accent: #125E8A; } /* brand medium */
 .card.card-icon:nth-child(4) { --card-accent: #E08A3C; } /* warm amber */
 .card.card-icon:nth-child(5) { --card-accent: #2D7A4F; } /* forest green */
-.card.card-icon:nth-child(6) { --card-accent: #7B5EA7; } /* muted plum */
+.card.card-icon:nth-child(6) { --card-accent: #6B7280; } /* medium grey */
 
 .card-icon-wrap {
   width: 60px;
