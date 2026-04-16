@@ -5,7 +5,7 @@
 - Home (`/`)
 - What We Do (`/what-we-do`)
   - Digital Engineering & Manufacturing (`/what-we-do#digital-engineering-manufacturing`)
-  - Digital Maintenance & Logistics (`/what-we-do#digital-maintenance-logistics`)
+  - Maintenance & Logistics Optimization (`/what-we-do#maintenance-logistics-optimization`)
   - Enterprise IT & Transformation (`/what-we-do#enterprise-it-transformation`)
   - Data & Analytics (`/what-we-do#data-analytics`)
   - Program Support (`/what-we-do#program-support`)

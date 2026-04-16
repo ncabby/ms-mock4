@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "redirects": [
     { "source": "/what-we-do", "destination": "/digital-engineering-manufacturing", "permanent": true },
-    { "source": "/enterprise-technology", "destination": "/enterprise-it", "permanent": true }
+    { "source": "/enterprise-technology", "destination": "/enterprise-it", "permanent": true },
+    { "source": "/digital-maintenance-logistics", "destination": "/maintenance-logistics-optimization", "permanent": true }
   ]
 }

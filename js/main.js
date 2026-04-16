@@ -217,7 +217,7 @@ function setActiveNavLink() {
 
   const offeringSlugs = [
     '/digital-engineering-manufacturing',
-    '/digital-maintenance-logistics',
+    '/maintenance-logistics-optimization',
     '/enterprise-it',
     '/data-analytics',
     '/program-support'
