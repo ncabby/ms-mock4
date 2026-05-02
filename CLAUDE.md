@@ -1,5 +1,12 @@
 # CLAUDE.md — Frontend Website Rules
 
+## Design Context (read first)
+- **`PRODUCT.md`** — strategic source of truth: brand register, target users, brand personality, anti-references, design principles, accessibility target. Read before making any user-facing copy or scope decision.
+- **`DESIGN.md`** + **`DESIGN.json`** — visual source of truth: tokens, typography, elevation, components, named rules, do's/don'ts. Read before any styling work.
+- Quick orientation: brand register; primary audience is federal program leads (warm, vetting capability); the site closes credibility, it does not pitch; Creative North Star is "The Operations Center"; single accent is **Bridge Blue (#197BBD)**; pair is Outfit (display) + Source Sans 3 (body); all shadows tinted to Hull Teal `rgba(32, 75, 87, ...)`.
+- Top anti-reference: the generic federal IT contractor visual register (Booz / Leidos / SAIC navy + gold + flag overlay). Main Sail loses by blending in.
+- Refresh PRODUCT.md / DESIGN.md via `/impeccable teach` or `/impeccable document`. Other impeccable commands (`shape`, `craft`, `critique`, `polish`, etc.) read these automatically.
+
 ## Always Do First
 - **Invoke the `frontend-design` skill** before writing any frontend code, every session, no exceptions.
 

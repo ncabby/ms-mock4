@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-01T00:00:00.000Z",
+  "title": "Design System: Main Sail",
+  "extensions": {
+    "colorMeta": {
+      "ms-dark": {
+        "role": "secondary",
+        "displayName": "Hull Teal",
+        "canonical": "oklch(38% 0.045 220)",
+        "tonalRamp": ["#0c1c22", "#13313b", "#1a4150", "#204b57", "#2a6373", "#3b7e8f", "#5e9aa8", "#aac3cb"]
+      },
+      "ms-medium": {
+        "role": "secondary",
+        "displayName": "Channel Blue",
+        "canonical": "oklch(43% 0.10 240)",
+        "tonalRamp": ["#08293c", "#0c3b56", "#0f4d70", "#125e8a", "#1c75a8", "#3a8dbe", "#73a9cd", "#bcd5e6"]
+      },
+      "ms-bright": {
+        "role": "primary",
+        "displayName": "Bridge Blue",
+        "canonical": "oklch(56% 0.13 240)",
+        "tonalRamp": ["#0a3450", "#0f4870", "#13608f", "#197bbd", "#358fc9", "#5ba6d5", "#8cc1e2", "#c8dff0"]
+      },
+      "ms-taupe": {
+        "role": "neutral",
+        "displayName": "Weathered Taupe",
+        "canonical": "oklch(78% 0.012 40)",
+        "tonalRamp": ["#3d3631", "#5e544d", "#80766e", "#a09690", "#c2b8b2", "#d4cdc8", "#e3ddda", "#f0eeec"]
+      },
+      "ms-white": {
+        "role": "neutral",
+        "displayName": "Operational White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["#0f1c20", "#2a3a3f", "#4a5a5f", "#6e7e83", "#9aaaaf", "#c4d2d6", "#e6ecee", "#ffffff"]
+      },
+      "ms-black": {
+        "role": "neutral",
+        "displayName": "Hull Black",
+        "canonical": "oklch(15% 0.012 220)",
+        "tonalRamp": ["#0f1c20", "#1c2c30", "#2a3a3f", "#3d4d52", "#5a6a6f", "#8090a3", "#bcc6c9", "#e8edee"]
+      },
+      "surface-base": {
+        "role": "neutral",
+        "displayName": "Worksurface Cream",
+        "canonical": "oklch(97% 0.002 60)",
+        "tonalRamp": ["#3a3835", "#5a5854", "#7d7a76", "#a09c97", "#c8c4bf", "#e3dfd9", "#f1ede8", "#f7f6f5"]
+      },
+      "surface-elevated": {
+        "role": "neutral",
+        "displayName": "Elevated White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["#0f1c20", "#2a3a3f", "#4a5a5f", "#6e7e83", "#9aaaaf", "#c4d2d6", "#e6ecee", "#ffffff"]
+      },
+      "surface-floating": {
+        "role": "neutral",
+        "displayName": "Floating White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["#0f1c20", "#2a3a3f", "#4a5a5f", "#6e7e83", "#9aaaaf", "#c4d2d6", "#e6ecee", "#ffffff"]
+      },
+      "area-bridge": {
+        "role": "tertiary",
+        "displayName": "Bridge Blue (Digital Engineering)",
+        "canonical": "oklch(56% 0.13 240)",
+        "tonalRamp": ["#0a3450", "#0f4870", "#13608f", "#197bbd", "#358fc9", "#5ba6d5", "#8cc1e2", "#c8dff0"]
+      },
+      "area-telemetry": {
+        "role": "tertiary",
+        "displayName": "Telemetry Teal (Maintenance & Logistics)",
+        "canonical": "oklch(60% 0.10 180)",
+        "tonalRamp": ["#0a3530", "#10544c", "#176d62", "#1a9e8f", "#3eb3a5", "#67c4b9", "#97d6cd", "#cfe9e4"]
+      },
+      "area-channel": {
+        "role": "tertiary",
+        "displayName": "Channel Blue (Enterprise IT)",
+        "canonical": "oklch(43% 0.10 240)",
+        "tonalRamp": ["#08293c", "#0c3b56", "#0f4d70", "#125e8a", "#1c75a8", "#3a8dbe", "#73a9cd", "#bcd5e6"]
+      },
+      "area-signal": {
+        "role": "tertiary",
+        "displayName": "Signal Amber (Data & Analytics)",
+        "canonical": "oklch(70% 0.13 60)",
+        "tonalRamp": ["#3d2410", "#5d391b", "#8a5326", "#b06b32", "#e08a3c", "#e9a464", "#f0bd8d", "#f6dec0"]
+      },
+      "area-sustainment": {
+        "role": "tertiary",
+        "displayName": "Sustainment Green (Program Support)",
+        "canonical": "oklch(50% 0.10 150)",
+        "tonalRamp": ["#0c2818", "#143b25", "#1f5635", "#2d7a4f", "#479267", "#6dac86", "#9ac4ab", "#cce0d5"]
+      },
+      "area-operations": {
+        "role": "tertiary",
+        "displayName": "Operations Grey (Intelligent Automation)",
+        "canonical": "oklch(54% 0.012 250)",
+        "tonalRamp": ["#1f2227", "#33373d", "#4a4f57", "#6b7280", "#878d99", "#a3a8b1", "#c2c6cc", "#e3e5e8"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero h1 only. White on Hull Teal in heroes. Outfit 700, fluid clamp." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2 throughout. Hull Teal on light, white on dark." },
+      "title": { "displayName": "Title", "purpose": "h3 for content blocks and major card headings." },
+      "body": { "displayName": "Body", "purpose": "Source Sans 3 at 1.175rem with 1.7 line-height. Reading-comfortable density for procurement-grade content." },
+      "label": { "displayName": "Overline / Eyebrow", "purpose": "Outfit 600 uppercase with 0.12em tracking. Section eyebrows, ticker labels, footer column heads." }
+    },
+    "shadows": [
+      { "name": "base", "value": "0 1px 3px rgba(32, 75, 87, 0.06)", "purpose": "Hairline lift for the lightest cards on cream backgrounds." },
+      { "name": "elevated", "value": "0 4px 16px rgba(32, 75, 87, 0.08), 0 1px 4px rgba(32, 75, 87, 0.04)", "purpose": "Default for cards, benefit cards, article cards, case-study cards, data tables." },
+      { "name": "floating", "value": "0 12px 40px rgba(32, 75, 87, 0.12), 0 4px 12px rgba(32, 75, 87, 0.06)", "purpose": "Mega-dropdown, contact form card, featured-article block." },
+      { "name": "hover-lift", "value": "0 20px 50px rgba(32, 75, 87, 0.18), 0 8px 20px rgba(32, 75, 87, 0.12), 0 2px 6px rgba(32, 75, 87, 0.08)", "purpose": "Three-layer composite paired with translateY(-8px) on interactive card hover." },
+      { "name": "header-scrolled", "value": "0 2px 20px rgba(32, 75, 87, 0.08)", "purpose": "Whisper of depth under the header once it transitions to its solid white state." },
+      { "name": "btn-primary-rest", "value": "0 4px 16px rgba(25, 123, 189, 0.25), 0 2px 4px rgba(25, 123, 189, 0.15)", "purpose": "Bridge Blue tinted shadow on primary buttons at rest." },
+      { "name": "btn-primary-hover", "value": "0 8px 24px rgba(25, 123, 189, 0.3), 0 4px 8px rgba(25, 123, 189, 0.2)", "purpose": "Bridge Blue shadow intensified on primary button hover." }
+    ],
+    "motion": [
+      { "name": "ease-spring", "value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "purpose": "Spring overshoot for entrance reveals and card hover lifts." },
+      { "name": "ease-smooth", "value": "cubic-bezier(0.25, 0.1, 0.25, 1)", "purpose": "Standard easing for state transitions (color, background, opacity)." },
+      { "name": "duration-fast", "value": "150ms", "purpose": "Color and opacity changes on hover/focus." },
+      { "name": "duration-normal", "value": "250ms", "purpose": "Default transition time for shadow lifts and dropdown reveals." },
+      { "name": "duration-slow", "value": "400ms", "purpose": "Scroll reveal entrances and the mobile-nav slide-in." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "480px" },
+      { "name": "tablet", "value": "768px" },
+      { "name": "desktop", "value": "1024px" },
+      { "name": "wide", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled Bridge Blue CTA with tinted shadow. The single most prominent action element.",
+      "html": "<button class=\"ds-btn-primary\">Explore Our Solutions</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1.1rem; padding: 0.875rem 2rem; border: none; border-radius: 10px; background: #197bbd; color: #ffffff; cursor: pointer; box-shadow: 0 4px 16px rgba(25, 123, 189, 0.25), 0 2px 4px rgba(25, 123, 189, 0.15); transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms cubic-bezier(0.25, 0.1, 0.25, 1); position: relative; overflow: hidden; } .ds-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(25, 123, 189, 0.3), 0 4px 8px rgba(25, 123, 189, 0.2); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 3px solid #197bbd; outline-offset: 3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Transparent fill with Hull Teal text and ms-dark-20 border. Hover swaps border and text to Bridge Blue.",
+      "html": "<button class=\"ds-btn-outline\">Learn More About Us</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1.1rem; padding: 0.875rem 2rem; border: 2px solid rgba(32, 75, 87, 0.2); border-radius: 10px; background: transparent; color: #204b57; cursor: pointer; transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), color 150ms ease, border-color 150ms ease, box-shadow 250ms ease; } .ds-btn-outline:hover { border-color: #197bbd; color: #197bbd; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(25, 123, 189, 0.12); } .ds-btn-outline:active { transform: scale(0.97); } .ds-btn-outline:focus-visible { outline: 3px solid #197bbd; outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "Home page service card. White surface with a 4px left accent in the service-area's tertiary color, a circular icon halo with a gradient from accent to Hull Teal, and a triple-stack hover lift.",
+      "html": "<a href=\"#\" class=\"ds-card-service\"><div class=\"ds-card-service-icon\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2L2 7l10 5 10-5-10-5z\"/><path d=\"M2 17l10 5 10-5\"/><path d=\"M2 12l10 5 10-5\"/></svg></div><div class=\"ds-card-service-body\"><h3>Digital Engineering &amp; Manufacturing</h3><p>Smart factory design, model-based engineering, and digital thread solutions.</p></div></a>",
+      "css": ".ds-card-service { display: flex; flex-direction: column; background: #ffffff; border-radius: 16px; border-left: 4px solid #197bbd; box-shadow: 0 4px 16px rgba(32, 75, 87, 0.08), 0 1px 4px rgba(32, 75, 87, 0.04); overflow: hidden; text-decoration: none; color: inherit; transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms cubic-bezier(0.25, 0.1, 0.25, 1); } .ds-card-service:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(32, 75, 87, 0.18), 0 8px 20px rgba(32, 75, 87, 0.12), 0 2px 6px rgba(32, 75, 87, 0.08); } .ds-card-service-icon { width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #197bbd, #204b57); display: flex; align-items: center; justify-content: center; color: #ffffff; margin: 2rem 2rem 0; box-shadow: 0 4px 18px rgba(25, 123, 189, 0.4), 0 2px 6px rgba(25, 123, 189, 0.2); transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1); } .ds-card-service:hover .ds-card-service-icon { transform: scale(1.08); } .ds-card-service-body { padding: 1rem 2rem 2rem; } .ds-card-service-body h3 { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1.45rem; line-height: 1.15; letter-spacing: -0.03em; color: #204b57; margin: 0 0 0.75rem; } .ds-card-service-body p { font-family: 'Source Sans 3', sans-serif; font-size: 1.1rem; line-height: 1.65; color: rgba(32, 75, 87, 0.7); margin: 0; }"
+    },
+    {
+      "name": "Form Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Text field with 2px ms-dark-20 border. Focus state replaces native outline with a Bridge Blue ring and a 4px ms-bright-20 glow.",
+      "html": "<label class=\"ds-input-wrap\"><span class=\"ds-input-label\">Your name</span><input class=\"ds-input\" type=\"text\" placeholder=\"Jane Operator\"/></label>",
+      "css": ".ds-input-wrap { display: block; font-family: 'Outfit', sans-serif; } .ds-input-label { display: block; font-weight: 500; font-size: 1.025rem; color: #204b57; margin-bottom: 0.5rem; } .ds-input { width: 100%; padding: 0.75rem 1rem; font-family: 'Source Sans 3', sans-serif; font-size: 1.1rem; border: 2px solid rgba(32, 75, 87, 0.2); border-radius: 10px; background: #ffffff; color: #204b57; transition: border-color 150ms ease, box-shadow 150ms ease; } .ds-input::placeholder { color: rgba(32, 75, 87, 0.5); } .ds-input:hover { border-color: rgba(32, 75, 87, 0.5); } .ds-input:focus { outline: none; border-color: #197bbd; box-shadow: 0 0 0 4px rgba(25, 123, 189, 0.2); }"
+    },
+    {
+      "name": "Teal Badge",
+      "kind": "chip",
+      "refersTo": "badge-teal",
+      "description": "Pill-shaped certification badge. ms-bright-10 fill with Bridge Blue text and a leading SVG icon.",
+      "html": "<span class=\"ds-badge-teal\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 11.08V12a10 10 0 11-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg>ISO 9001:2015</span>",
+      "css": ".ds-badge-teal { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border-radius: 100px; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.95rem; background: rgba(25, 123, 189, 0.1); color: #197bbd; }"
+    },
+    {
+      "name": "Section Eyebrow",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Outfit 600 uppercase overline used above section headlines and content overlines.",
+      "html": "<span class=\"ds-eyebrow\">Trusted Alliances</span>",
+      "css": ".ds-eyebrow { display: block; font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.12em; color: #197bbd; }"
+    },
+    {
+      "name": "Consortium Tile",
+      "kind": "card",
+      "refersTo": "consortium-tile",
+      "description": "Signature tile for federal consortium affiliations. White surface with a hairline border, hover lift, and a thin gradient strip that appears at the top edge on hover.",
+      "html": "<a href=\"#\" class=\"ds-consortium-tile\"><div class=\"ds-consortium-tile-logo\"><img src=\"https://placehold.co/120x60?text=IWRP\" alt=\"\"/></div><p class=\"ds-consortium-tile-name\">Information Warfare Research Project</p><span class=\"ds-consortium-tile-acronym\">IWRP</span></a>",
+      "css": ".ds-consortium-tile { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; background: #ffffff; border: 1px solid rgba(32, 75, 87, 0.1); border-radius: 10px; padding: 2rem 1.5rem 1.5rem; box-shadow: 0 1px 2px rgba(32, 75, 87, 0.04); text-decoration: none; color: inherit; overflow: hidden; transition: transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 260ms cubic-bezier(0.2, 0.8, 0.2, 1), border-color 260ms ease; } .ds-consortium-tile::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, #197bbd, #125e8a); opacity: 0; transition: opacity 260ms ease; } .ds-consortium-tile:hover { transform: translateY(-4px); box-shadow: 0 16px 32px -12px rgba(32, 75, 87, 0.18), 0 4px 10px -4px rgba(32, 75, 87, 0.1); border-color: rgba(25, 123, 189, 0.25); } .ds-consortium-tile:hover::before { opacity: 1; } .ds-consortium-tile-logo { height: 80px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; } .ds-consortium-tile-logo img { max-height: 72px; max-width: 100%; width: auto; height: auto; object-fit: contain; } .ds-consortium-tile-name { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 0.95rem; color: #204b57; letter-spacing: -0.01em; line-height: 1.3; margin: 0 0 0.5rem; } .ds-consortium-tile-acronym { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; color: #197bbd; }"
+    },
+    {
+      "name": "Anchor Sub-Nav Link",
+      "kind": "nav",
+      "refersTo": "anchor-nav",
+      "description": "Sticky pill-style navigation link used on capability and solution pages. Active state gets a Bridge Blue tint and weight bump.",
+      "html": "<nav class=\"ds-anchor-nav\"><a href=\"#\" class=\"ds-anchor-nav-link is-active\">Overview</a><a href=\"#\" class=\"ds-anchor-nav-link\">Capabilities</a><a href=\"#\" class=\"ds-anchor-nav-link\">Case Studies</a></nav>",
+      "css": ".ds-anchor-nav { display: flex; align-items: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(32, 75, 87, 0.1); padding: 0 1rem; min-height: 52px; } .ds-anchor-nav-link { font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 1.025rem; white-space: nowrap; padding: 0.5rem 1rem; border-radius: 6px; color: rgba(32, 75, 87, 0.7); text-decoration: none; transition: color 150ms ease, background-color 150ms ease; } .ds-anchor-nav-link:hover { color: #197bbd; background: rgba(25, 123, 189, 0.1); } .ds-anchor-nav-link.is-active { color: #197bbd; background: rgba(25, 123, 189, 0.2); font-weight: 600; } .ds-anchor-nav-link:focus-visible { outline: 2px solid #197bbd; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Operations Center",
+    "overview": "Main Sail's interface reads like a calm command surface, not a marketing site. The audience is procurement officers, program managers, and federal contracting leads, so density of information matters and so does breathing room. Surfaces feel like a mature dashboard run by professionals: deep teal authority on dark sections, warm cream worksurfaces under section content, and a single deliberate accent (Bridge Blue, #197BBD) reserved for action. Twenty-five years of tenure earns the right to feel a little timeless. The work speaks; the design clears the way. The system is built on tinted ambient depth. Every shadow is rgba(32, 75, 87, ...), the brand teal at low alpha, never neutral grey. Three elevation layers (base, elevated, floating) give the surface plane a real z-axis. Cards lift on hover (translateY(-8px)) with the shadow intensifying in the same teal hue, never a generic black drop.",
+    "keyCharacteristics": [
+      "Tinted depth, not flat. Three-layer shadow vocabulary in the brand teal hue.",
+      "Single-accent commitment. Bridge Blue (#197BBD) carries every CTA, link, focus state, and overline.",
+      "Operational density with editorial breathing room. Spacing scale from xs (8px) to 5xl (128px) used variably for rhythm.",
+      "Geometric display + humanist body. Outfit (700) on Source Sans 3 (400), both sans, never serif.",
+      "Six categorical accents tied to service areas (Bridge, Telemetry, Channel, Signal, Sustainment, Operations) used only on service cards and their gradient halos.",
+      "Crosshatch SVG pattern on cream backgrounds for a subtle document texture; SVG noise grain on dark hero overlays."
+    ],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "Bridge Blue is the only color that means 'act.' If two elements on the same screen are Bridge Blue and only one is interactive, you have a bug. Service-area tertiaries are categorical labels, not action signals.", "section": "colors" },
+      { "name": "The No-Black Rule", "body": "No element uses #000 or pure black shadow. Every neutral and every shadow tints toward Hull Teal (#204B57). The visual temperature is consistent across light and dark sections.", "section": "colors" },
+      { "name": "The Single Hero Accent Rule", "body": "Heroes are dark teal with a low-opacity image (0.35) and an SVG noise grain overlay. Never gradient meshes, never animated backgrounds, never glassmorphism cards stacked over the hero.", "section": "colors" },
+      { "name": "The All-Sans Rule", "body": "No serifs anywhere. The pairing is geometric Outfit on humanist Source Sans 3. A serif here would read as 'consultancy boilerplate' or 'law firm' and break the operational register.", "section": "typography" },
+      { "name": "The Tracked-Label Rule", "body": "Every uppercase label uses 0.08em to 0.14em tracking and Outfit at 600. Tight tracking on uppercase reads as cramped; this is the spec, not a suggestion.", "section": "typography" },
+      { "name": "The Body-Reads-At-1.175 Rule", "body": "Body copy is 18.8px (1.175rem), not 16px. The line-height is 1.7. This is reading-comfortable density for procurement-grade content. Do not shrink to 1rem to fit more.", "section": "typography" },
+      { "name": "The Teal-Only Shadow Rule", "body": "Every box-shadow is rgba(32, 75, 87, ...). Pure black shadows are prohibited. Accent halos around service-card icons use color-mix with the card accent at low alpha; they are the only exception.", "section": "elevation" },
+      { "name": "The Translate-On-Hover Rule", "body": "Cards lift with transform: translateY(-8px), not by scale. Scale on hover reads as juvenile; translate reads as calm. Pair the lift with a shadow upgrade.", "section": "elevation" },
+      { "name": "The Triple-Stack Lift", "body": "The hover shadow is three layers (20px / 8px / 2px blur), not one. A single big blurry drop reads as cheap. The triple stack reads like a card actually moving toward you.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do tint every neutral and every shadow toward Hull Teal (#204B57). Pure greys and pure black are wrong here.",
+      "Do treat Bridge Blue (#197BBD) as the single voice of action. Reserve it for CTAs, links, focus states, overlines, and the anchor-nav active state.",
+      "Do pair Outfit (700) for display with Source Sans 3 (400) for body. Headings tighter (-0.03em tracking, line-height 1.15); body looser (1.7 line-height).",
+      "Do use --space-3xl (4rem) and --space-5xl (8rem) generously for vertical rhythm. Section padding is intentionally large.",
+      "Do lift cards on hover with transform: translateY(-8px) and a three-layer Hull Teal shadow stack.",
+      "Do add the SVG crosshatch pattern under cream sections (15px tile, white strokes) and SVG noise grain under hero images and the CTA gradient.",
+      "Do ease motion with --ease-spring (cubic-bezier(0.34, 1.56, 0.64, 1)) for spring entrances and --ease-smooth (cubic-bezier(0.25, 0.1, 0.25, 1)) for state transitions.",
+      "Do route every focus-visible state through Bridge Blue with a 2 to 3px outline and 2 to 4px offset.",
+      "Do show certifications and 'Veteran-Owned Small Business' as pill badges. They are part of the brand voice, not boilerplate."
+    ],
+    "donts": [
+      "Don't introduce gradient text (background-clip: text on a gradient fill). The accent stays solid Bridge Blue.",
+      "Don't ship glassmorphism as a decorative pattern. The header gets one purposeful blur on scroll; nothing else.",
+      "Don't use the hero-metric template (huge number, tiny label, supporting stats with a gradient accent). The mission stat trio is the only stat block.",
+      "Don't use neon, dark-mode-with-purple-gradients, or animated mesh backgrounds. This is operations, not generative AI marketing.",
+      "Don't swap Outfit or Source Sans 3 for a serif. The system is all-sans on purpose.",
+      "Don't scale cards on hover. Translate them.",
+      "Don't put Bridge Blue on a non-interactive element. If you see two Bridge Blue elements on a screen, one of them should be interactive or it is a bug.",
+      "Don't introduce a fourth elevation layer. The vocabulary is base, elevated, floating, plus the hover lift composite.",
+      "Don't use Tailwind default palette (indigo-500, blue-600, slate). Token names map to the brand: ms-dark, ms-bright, ms-medium, ms-taupe.",
+      "Don't use #000 or pure black anywhere, including shadows. Hull Black (#0f1c20) for text, Hull Teal at alpha for shadows.",
+      "Don't collapse the body to 1rem to fit more content. The reading size is 1.175rem with 1.7 line-height; respect it.",
+      "Don't render decorative borders with width greater than 1px on new components. The two existing exceptions (the 4px service-card left accent and the 3px solution-item border on dark) are the documented system; do not extend the pattern to additional surfaces."
+    ]
+  }
+}

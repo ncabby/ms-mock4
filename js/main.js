@@ -114,7 +114,27 @@ function initMegaDropdowns() {
     });
 
     trigger.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') close();
+      if (e.key === 'Escape') {
+        close();
+        trigger.focus();
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        open();
+        const firstItem = dropdown.querySelector('.mega-dropdown-item');
+        if (firstItem) firstItem.focus();
+      } else if ((e.key === 'Enter' || e.key === ' ') && !dropdown.classList.contains('is-open')) {
+        e.preventDefault();
+        open();
+        const firstItem = dropdown.querySelector('.mega-dropdown-item');
+        if (firstItem) firstItem.focus();
+      }
+    });
+
+    dropdown.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        close();
+        trigger.focus();
+      }
     });
   });
 
@@ -194,17 +214,33 @@ function initAnchorNav() {
 
   if (!sections.length) return;
 
+  function setActive(link) {
+    links.forEach(l => l.classList.remove('is-active'));
+    if (link) link.classList.add('is-active');
+  }
+
+  // Click sets active state immediately; the observer takes over once scroll settles.
+  links.forEach(link => {
+    link.addEventListener('click', () => setActive(link));
+  });
+
+  // Track which sections are currently in the activation band; the topmost one wins.
+  const inView = new Set();
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        links.forEach(l => l.classList.remove('is-active'));
-        const match = sections.find(s => s.section === entry.target);
-        if (match) match.link.classList.add('is-active');
-      }
+      if (entry.isIntersecting) inView.add(entry.target);
+      else inView.delete(entry.target);
     });
+
+    if (!inView.size) return;
+    // Pick the topmost section currently in the activation band.
+    const top = [...inView].sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top)[0];
+    const match = sections.find(s => s.section === top);
+    if (match) setActive(match.link);
   }, {
-    threshold: 0.2,
-    rootMargin: '-120px 0px -50% 0px'
+    threshold: [0, 0.05, 0.5, 1.0],
+    rootMargin: '-128px 0px -55% 0px'
   });
 
   sections.forEach(({ section }) => observer.observe(section));
