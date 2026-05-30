@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body data-area="signal">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header is-scrolled" role="banner">
     <div class="header-inner">
@@ -57,9 +58,9 @@
     <div class="mobile-nav-cta"><a href="/contact" class="btn btn-primary" style="width:100%;">Contact Us</a></div>
   </nav>
 
-  <section class="hero hero-short">
+  <section id="main" class="hero hero-short hero-typography">
     <div class="hero-bg">
-      <img src="/brand_assets/solutions-bg.jpg" alt="" class="hero-bg-img" style="opacity:0.35;">
+      <div class="hero-radial-accent"></div>
       <div class="grain-overlay"></div>
     </div>
     <div class="container">
@@ -70,7 +71,17 @@
     </div>
   </section>
 
-  <section class="section" style="background: var(--ms-white); padding-top: 5.6rem;">
+  <!-- ========== ANCHOR SUB-NAV ========== -->
+  <nav class="anchor-nav" aria-label="In-page navigation">
+    <div class="anchor-nav-inner">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#impact">Proven Impact</a>
+      <a href="#contact-cta">Get in Touch</a>
+    </div>
+  </nav>
+
+
+  <section id="capabilities" class="section" style="background: var(--ms-white); padding-top: 5.6rem;">
     <div class="container">
       <div class="section-header reveal">
         <span class="overline">Our Capabilities</span>
@@ -80,39 +91,39 @@
       <div class="benefits-grid">
         <div class="benefit-card reveal reveal-delay-1">
           <div class="benefit-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <h4>Business Intelligence &amp; Reporting</h4>
+          <h3>Business Intelligence &amp; Reporting</h3>
           <p>Self-service BI platforms, executive dashboards, and automated reporting that put insights directly in decision-makers' hands.</p>
         </div>
         <div class="benefit-card reveal reveal-delay-2">
           <div class="benefit-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
-          <h4>Data Warehousing &amp; Lake Architecture</h4>
+          <h3>Data Warehousing &amp; Lake Architecture</h3>
           <p>Modern lakehouse architectures on Snowflake, Databricks, and cloud-native services that unify structured and unstructured data at scale.</p>
         </div>
         <div class="benefit-card reveal reveal-delay-3">
           <div class="benefit-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8 6a4 4 0 018 0"/><path d="M12 18v4"/><path d="M8 22h8"/><rect x="6" y="10" width="12" height="8" rx="2"/></svg></div>
-          <h4>Advanced Analytics &amp; Modeling</h4>
+          <h3>Advanced Analytics &amp; Modeling</h3>
           <p>Statistical modeling, machine learning, and predictive analytics that uncover patterns and forecast outcomes with confidence.</p>
         </div>
         <div class="benefit-card reveal reveal-delay-4">
           <div class="benefit-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h4>Data Governance &amp; Quality</h4>
+          <h3>Data Governance &amp; Quality</h3>
           <p>Enterprise data catalogs, lineage tracking, quality rules, and stewardship programs that build trust in your data assets.</p>
         </div>
         <div class="benefit-card reveal reveal-delay-5">
           <div class="benefit-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
-          <h4>Real-Time Dashboards</h4>
+          <h3>Real-Time Dashboards</h3>
           <p>Streaming data visualization with Power BI, Tableau, and custom solutions that provide operational awareness in real time.</p>
         </div>
-        <div class="benefit-card reveal reveal-delay-5">
+        <div class="benefit-card reveal reveal-delay-6">
           <div class="benefit-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-          <h4>Data Integration &amp; ETL/ELT</h4>
+          <h3>Data Integration &amp; ETL/ELT</h3>
           <p>Robust data pipelines using modern ETL/ELT tools and orchestration frameworks that reliably move and transform data across systems.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background-color: #f7f6f5; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15'%3E%3Crect width='15' height='15' fill='%23f7f6f5'/%3E%3Cline x1='15' y1='0' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3Cline x1='0' y1='15' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3C/svg%3E&quot;); background-repeat: repeat; padding-top: 5.6rem; position: relative; overflow: hidden;">
+  <section id="impact" class="section" style="background-color: #f7f6f5; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15'%3E%3Crect width='15' height='15' fill='%23f7f6f5'/%3E%3Cline x1='15' y1='0' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3Cline x1='0' y1='15' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3C/svg%3E&quot;); background-repeat: repeat; padding-top: 5.6rem; position: relative; overflow: hidden;">
     <div style="position:absolute; inset:0; background: linear-gradient(to bottom, transparent 55%, rgba(255,255,255,0.85) 100%); pointer-events:none; z-index:1;"></div>
     <div class="container" style="position:relative; z-index:2;">
       <div class="section-header reveal">
@@ -149,14 +160,14 @@
     </div>
   </section>
 
-  <section class="cta-band">
+  <section id="contact-cta" class="cta-band">
     <div class="cta-band-bg"><div class="grain-overlay" style="opacity:0.15;"></div></div>
     <div class="container">
       <div class="cta-band-content reveal">
         <h2>Let's Solve It Together</h2>
         <p>Ready to unlock the value hidden in your data? Our analytics experts can help you build the platform and insights you need.</p>
         <div style="display:flex; gap:var(--space-md); justify-content:center; flex-wrap:wrap;">
-          <a href="/contact" class="btn btn-white btn-lg">Get in Touch</a>
+          <a href="/contact" class="btn btn-white btn-lg">Start a Conversation</a>
           <a href="/contract-vehicles" class="btn btn-secondary btn-lg">Our Contract Vehicles</a>
         </div>
       </div>
@@ -166,12 +177,12 @@
   <footer class="site-footer" role="contentinfo">
     <div class="footer-grid">
       <div class="footer-brand"><img src="/brand_assets/main_sail_logo.png" alt="Main Sail"><p>Accelerating digital transformation for government and enterprise clients through strategic IT consulting, implementation, and managed services.</p><div class="footer-social"><a href="https://www.linkedin.com/company/main-sail-llc" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 11-.01-4.12 2.06 2.06 0 01.01 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.22 0z"/></svg></a><a href="https://www.facebook.com/MainSailGroup" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a><a href="https://x.com/MainSailGroup" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.731-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a></div></div>
-      <div class="footer-col"><h5>Quick Links</h5><a href="/">Home</a><a href="/digital-engineering-manufacturing">What We Do</a><a href="/contract-vehicles">Contract Vehicles</a><a href="/news-insights">News &amp; Insights</a><a href="/careers">Careers</a></div>
-      <div class="footer-col"><h5>Services</h5><a href="/digital-engineering-manufacturing">Digital Engineering</a><a href="/maintenance-logistics-optimization">Maintenance &amp; Logistics</a><a href="/enterprise-it">Enterprise IT</a><a href="/data-analytics">Data &amp; Analytics</a><a href="/program-support">Program Support</a>
+      <div class="footer-col"><h3>Quick Links</h3><a href="/">Home</a><a href="/digital-engineering-manufacturing">What We Do</a><a href="/contract-vehicles">Contract Vehicles</a><a href="/news-insights">News &amp; Insights</a><a href="/careers">Careers</a></div>
+      <div class="footer-col"><h3>Services</h3><a href="/digital-engineering-manufacturing">Digital Engineering</a><a href="/maintenance-logistics-optimization">Maintenance &amp; Logistics</a><a href="/enterprise-it">Enterprise IT</a><a href="/data-analytics">Data &amp; Analytics</a><a href="/program-support">Program Support</a>
         <a href="/intelligent-automation">Intelligent Automation</a></div>
-      <div class="footer-col"><h5>Contact</h5><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chesterland, OH</span></div><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>mainsail@mainsailgroup.com</span></div><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><span>(216) 472-5100</span></div></div>
+      <div class="footer-col"><h3>Contact</h3><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Chesterland, OH</span></div><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>mainsail@mainsailgroup.com</span></div><div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg><span>(216) 472-5100</span></div></div>
     </div>
-    <div class="footer-bottom"><div class="footer-bottom-inner"><span>&copy; 2026 Main Sail Technology Solutions. All rights reserved.</span><span><a href="/privacy-policy" style="color:rgba(255,255,255,0.5); text-decoration:none; transition: color 150ms ease;">Privacy Policy</a> &middot; ISO 9001:2015 &middot; CMMC Level 2 Certified</span></div></div>
+    <div class="footer-bottom"><div class="footer-bottom-inner"><span>&copy; 2026 Main Sail Technology Solutions. All rights reserved.</span><span><a href="/privacy-policy" class="footer-bottom-link">Privacy Policy</a> &middot; ISO 9001:2015 &middot; CMMC Level 2 Certified</span></div></div>
   </footer>
 
   <script src="/js/main.js"></script>

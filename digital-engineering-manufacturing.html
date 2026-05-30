@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body data-area="bridge">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <!-- ========== HEADER ========== -->
   <header class="site-header is-scrolled" role="banner">
@@ -125,9 +126,9 @@
 
 
   <!-- ========== SHORT HERO ========== -->
-  <section class="hero hero-short">
+  <section id="main" class="hero hero-short hero-typography">
     <div class="hero-bg">
-      <img src="/brand_assets/solutions-bg.jpg" alt="" class="hero-bg-img" style="opacity:0.35;">
+      <div class="hero-radial-accent"></div>
       <div class="grain-overlay"></div>
     </div>
     <div class="container">
@@ -138,14 +139,24 @@
     </div>
   </section>
 
+  <!-- ========== ANCHOR SUB-NAV ========== -->
+  <nav class="anchor-nav" aria-label="In-page navigation">
+    <div class="anchor-nav-inner">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#impact">Proven Impact</a>
+      <a href="#contact-cta">Get in Touch</a>
+    </div>
+  </nav>
+
+
 
   <!-- ========== SUB-SERVICES GRID ========== -->
-  <section class="section" style="background: var(--ms-white); padding-top: 5.6rem;">
+  <section id="capabilities" class="section" style="background: var(--ms-white); padding-top: 5.6rem;">
     <div class="container">
       <div class="section-header reveal">
         <span class="overline">Our Capabilities</span>
         <h2>What We Deliver</h2>
-        <p>Deep domain expertise in model-based engineering, smart factory design, and digital thread implementation for defense and commercial manufacturers.</p>
+        <p>Deep domain expertise in Model-Based Systems Engineering (MBSE), smart factory design, and the digital thread (the connected data record that follows a product from design through manufacturing and sustainment) for defense and commercial manufacturers.</p>
       </div>
 
       <div class="benefits-grid">
@@ -155,8 +166,8 @@
               <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
             </svg>
           </div>
-          <h4>Model-Based Systems Engineering</h4>
-          <p>SysML/UML modeling, requirements traceability, and architecture frameworks that replace document-centric processes with integrated digital models.</p>
+          <h3>Model-Based Systems Engineering</h3>
+          <p>Industry-standard modeling languages (SysML and UML), requirements traceability, and architecture frameworks that replace document-heavy processes with integrated digital models.</p>
         </div>
 
         <div class="benefit-card reveal reveal-delay-2">
@@ -165,7 +176,7 @@
               <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/>
             </svg>
           </div>
-          <h4>Smart Factory Design</h4>
+          <h3>Smart Factory Design</h3>
           <p>End-to-end smart factory architecture including IoT sensor networks, edge computing, and real-time production monitoring systems.</p>
         </div>
 
@@ -175,7 +186,7 @@
               <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
             </svg>
           </div>
-          <h4>Digital Thread &amp; Digital Twin</h4>
+          <h3>Digital Thread &amp; Digital Twin</h3>
           <p>Connected data ecosystems that link design, manufacturing, and sustainment data into a single authoritative source of truth.</p>
         </div>
 
@@ -185,7 +196,7 @@
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
             </svg>
           </div>
-          <h4>Real-Time IoT Data Integration</h4>
+          <h3>Real-Time IoT Data Integration</h3>
           <p>Seamless ingestion and integration of IoT sensor data streams into enterprise systems, enabling real-time monitoring, alerting, and data-driven decision-making across operations.</p>
         </div>
 
@@ -195,17 +206,17 @@
               <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
             </svg>
           </div>
-          <h4>Modeling &amp; Simulation</h4>
+          <h3>Modeling &amp; Simulation</h3>
           <p>High-fidelity models and physics-based simulations for virtual prototyping, stress analysis, and manufacturing process validation.</p>
         </div>
 
-        <div class="benefit-card reveal reveal-delay-5">
+        <div class="benefit-card reveal reveal-delay-6">
           <div class="benefit-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
             </svg>
           </div>
-          <h4>Supply Chain Planning &amp; Optimization</h4>
+          <h3>Supply Chain Planning &amp; Optimization</h3>
           <p>Data-driven supply chain modeling, demand forecasting, and logistics optimization to improve resilience, reduce lead times, and lower total cost of ownership.</p>
         </div>
       </div>
@@ -214,7 +225,7 @@
 
 
   <!-- ========== PROVEN IMPACT ========== -->
-  <section class="section" style="background-color: #f7f6f5; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15'%3E%3Crect width='15' height='15' fill='%23f7f6f5'/%3E%3Cline x1='15' y1='0' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3Cline x1='0' y1='15' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3C/svg%3E&quot;); background-repeat: repeat; padding-top: 5.6rem; position: relative; overflow: hidden;">
+  <section id="impact" class="section" style="background-color: #f7f6f5; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15'%3E%3Crect width='15' height='15' fill='%23f7f6f5'/%3E%3Cline x1='15' y1='0' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3Cline x1='0' y1='15' x2='15' y2='15' stroke='%23ffffff' stroke-width='4'/%3E%3C/svg%3E&quot;); background-repeat: repeat; padding-top: 5.6rem; position: relative; overflow: hidden;">
     <div style="position:absolute; inset:0; background: linear-gradient(to bottom, transparent 55%, rgba(255,255,255,0.85) 100%); pointer-events:none; z-index:1;"></div>
     <div class="container" style="position:relative; z-index:2;">
       <div class="section-header reveal">
@@ -275,7 +286,7 @@
 
 
   <!-- ========== CTA BAND ========== -->
-  <section class="cta-band">
+  <section id="contact-cta" class="cta-band">
     <div class="cta-band-bg">
       <div class="grain-overlay" style="opacity:0.15;"></div>
     </div>
@@ -284,7 +295,7 @@
         <h2>Let's Solve It Together</h2>
         <p>Ready to modernize your engineering and manufacturing operations? Our digital engineering experts are here to help you build the future.</p>
         <div style="display:flex; gap:var(--space-md); justify-content:center; flex-wrap:wrap;">
-          <a href="/contact" class="btn btn-white btn-lg">Get in Touch</a>
+          <a href="/contact" class="btn btn-white btn-lg">Start a Conversation</a>
           <a href="/contract-vehicles" class="btn btn-secondary btn-lg">Our Contract Vehicles</a>
         </div>
       </div>
@@ -305,7 +316,7 @@
         </div>
       </div>
       <div class="footer-col">
-        <h5>Quick Links</h5>
+        <h3>Quick Links</h3>
         <a href="/">Home</a>
         <a href="/digital-engineering-manufacturing">What We Do</a>
         <a href="/contract-vehicles">Contract Vehicles</a>
@@ -313,7 +324,7 @@
         <a href="/careers">Careers</a>
       </div>
       <div class="footer-col">
-        <h5>Services</h5>
+        <h3>Services</h3>
         <a href="/digital-engineering-manufacturing">Digital Engineering</a>
         <a href="/maintenance-logistics-optimization">Maintenance &amp; Logistics</a>
         <a href="/enterprise-it">Enterprise IT</a>
@@ -322,7 +333,7 @@
         <a href="/intelligent-automation">Intelligent Automation</a>
       </div>
       <div class="footer-col">
-        <h5>Contact</h5>
+        <h3>Contact</h3>
         <div class="footer-contact-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span>Chesterland, OH</span>
@@ -340,7 +351,7 @@
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
         <span>&copy; 2026 Main Sail Technology Solutions. All rights reserved.</span>
-        <span><a href="/privacy-policy" style="color:rgba(255,255,255,0.5); text-decoration:none; transition: color 150ms ease;">Privacy Policy</a> &middot; ISO 9001:2015 &middot; CMMC Level 2 Certified</span>
+        <span><a href="/privacy-policy" class="footer-bottom-link">Privacy Policy</a> &middot; ISO 9001:2015 &middot; CMMC Level 2 Certified</span>
       </div>
     </div>
   </footer>
