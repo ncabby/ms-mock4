@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initMegaDropdowns();
   initScrollReveal();
+  initStatCounters();
   initTickers();
   initAnchorNav();
   setActiveNavLink();
@@ -170,6 +171,62 @@ function initScrollReveal() {
   });
 
   reveals.forEach(el => observer.observe(el));
+}
+
+/* --- Stat Count-Up (IntersectionObserver) --- */
+function initStatCounters() {
+  const band = document.querySelector('.stat-band');
+  if (!band) return;
+  const nums = band.querySelectorAll('strong[data-count-to]');
+  if (!nums.length) return;
+
+  const format = (el, value) => {
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    const suffix = el.dataset.suffix || '';
+    const shown = decimals ? value.toFixed(decimals) : Math.round(value).toString();
+    el.textContent = shown + suffix;
+  };
+
+  // Reduced motion: show final values, skip the animation (mirrors initScrollReveal).
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    nums.forEach(el => format(el, parseFloat(el.dataset.countTo)));
+    return;
+  }
+
+  // Reset to zero so the final value never flashes before the count runs.
+  nums.forEach(el => format(el, 0));
+
+  const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+  const DURATION = 1200;
+
+  const run = () => {
+    const start = performance.now();
+    const tick = (now) => {
+      const p = Math.min((now - start) / DURATION, 1);
+      const eased = easeOutCubic(p);
+      nums.forEach(el => format(el, parseFloat(el.dataset.countTo) * eased));
+      if (p < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        nums.forEach(el => format(el, parseFloat(el.dataset.countTo)));
+      }
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        run();
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  observer.observe(band);
 }
 
 /* --- Logo Tickers --- */

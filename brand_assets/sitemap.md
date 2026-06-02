@@ -13,7 +13,6 @@
 - Contracts (`/contracts`)
 - Jobs (`/jobs`)
 - Contact Us (`/contact-us`)
-- News & Insights (`/news-insights`)
 
 ## Horizonal Scrolling Tickers
 
