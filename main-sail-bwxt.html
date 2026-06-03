@@ -3,53 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CMMC 2.0 — Main Sail Technology Solutions</title>
-  <meta name="description" content="CMMC 2.0 — what the Cybersecurity Maturity Model Certification means for your organization, and how Main Sail helps you implement the 110 NIST 800-171 requirements.">
+  <title>Main Sail BWXT W2 — Main Sail Technology Solutions</title>
+  <meta name="description" content="Welcome and onboarding documents for Main Sail's BWXT W2 assignment — forms, payroll setup, agreements, and contacts.">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <style>
-    .cmmc-content h2 {
-      font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+    .bwxt-content h2 {
+      font-size: clamp(1.4rem, 2.2vw, 1.8rem);
       line-height: 1.25;
-      margin-bottom: var(--space-lg);
+      margin: var(--space-2xl) 0 var(--space-md);
     }
-    .cmmc-content p {
+    .bwxt-content h2:first-child {
+      margin-top: 0;
+    }
+    .bwxt-content h3 {
+      font-size: 1.15rem;
+      color: var(--ms-dark);
+      margin: var(--space-lg) 0 var(--space-sm);
+    }
+    .bwxt-content p {
       color: var(--ms-dark-70);
       font-size: 1.1rem;
       line-height: 1.7;
       margin-bottom: var(--space-md);
     }
-    .cmmc-content a {
+    .bwxt-content a {
       color: var(--ms-bright);
       text-decoration: underline;
       text-underline-offset: 2px;
       transition: opacity var(--duration-fast) var(--ease-smooth);
     }
-    .cmmc-content a:hover {
+    .bwxt-content a:hover {
       opacity: 0.7;
     }
-    .cmmc-content a:focus-visible {
+    .bwxt-content a:focus-visible {
       outline: 2px solid var(--ms-bright);
       outline-offset: 2px;
     }
-    .cmmc-badge {
-      float: right;
-      width: 200px;
-      max-width: 38%;
-      height: auto;
-      margin: 0.25rem 0 var(--space-lg) var(--space-xl);
-      shape-margin: 1rem;
+    .bwxt-content ul {
+      list-style: none;
+      margin: 0 0 var(--space-md);
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
     }
-    @media (max-width: 640px) {
-      .cmmc-badge {
-        float: none;
-        display: block;
-        width: 200px;
-        max-width: 60%;
-        margin: 0 auto var(--space-xl);
-      }
+    .bwxt-content li {
+      position: relative;
+      padding-left: var(--space-lg);
+      color: var(--ms-dark-70);
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .bwxt-content li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--ms-bright);
+    }
+    .bwxt-content ul ul {
+      margin: var(--space-sm) 0 0;
+      padding-left: var(--space-lg);
+    }
+    .bwxt-content ul ul li::before {
+      background: transparent;
+      border: 1.5px solid var(--ms-bright);
+      top: calc(0.6em - 1.5px);
+    }
+    .bwxt-table-wrap {
+      overflow-x: auto;
+      margin-top: var(--space-lg);
+      -webkit-overflow-scrolling: touch;
+    }
+    .bwxt-content table {
+      width: 100%;
+      min-width: 640px;
+      border-collapse: collapse;
+      background: var(--surface-elevated);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-elevated);
+      font-size: 1rem;
+    }
+    .bwxt-content thead {
+      background: var(--ms-dark);
+    }
+    .bwxt-content th {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ms-white);
+      text-align: left;
+      padding: var(--space-md) var(--space-lg);
+    }
+    .bwxt-content td {
+      padding: var(--space-md) var(--space-lg);
+      color: var(--ms-dark-70);
+      border-bottom: 1px solid var(--ms-dark-10);
+      vertical-align: top;
+    }
+    .bwxt-content tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .bwxt-content tbody tr:hover {
+      background: var(--ms-bright-10);
     }
   </style>
 </head>
@@ -106,8 +172,7 @@
     </div>
     <div class="container">
       <div class="hero-content reveal">
-        <h1>CMMC 2.0</h1>
-        <p>Cybersecurity Maturity Model Certification.</p>
+        <h1>Main Sail BWXT W2</h1>
       </div>
     </div>
   </section>
@@ -115,17 +180,96 @@
   <section class="section" style="background: var(--ms-white);">
     <div class="container">
       <div class="container-narrow" style="padding:0;">
-        <div class="cmmc-content reveal">
-          <img class="cmmc-badge" src="/brand_assets/cmmc-2-cert.webp" alt="Cybersecurity Maturity Model Certification Level 2 badge" width="200" height="187">
-          <h2>CMMC 2.0 &ndash; What Does it Mean for Your Organization?</h2>
-          <p>As you may have heard, The Defense Department has recently revamped its cybersecurity standard for defense contractors. Cybersecurity Maturity Model Certification (CMMC) 2.0, announced November 4, promises a new direction for protecting federal contract information and controlled unclassified information (CUI).</p>
-          <p><a href="https://www.mainsailgroup.com/wp-content/uploads/2025/05/CMMC-2.0.pdf" target="_blank" rel="noopener noreferrer">Main Sail&rsquo;s updated CMMC 2.0 Guide</a> provides everything you need to know to effectively prepare for Cybersecurity Maturity Model Certification 2.0.</p>
-          <p>During the period of approval of CMMC 2.0, the 110 requirements associated with NIST 800-171 that have been on the books for years now, under the DFARS 7012 clause will still apply to CMMC 2.0 when approved. So now is a good time to take this opportunity to start addressing those 110 requirements now so that when the final rule is in effect, you will be set for success.</p>
-          <p>All companies are encouraged to start to improve their cybersecurity with the implementation of NIST 800-171. The DOD has continued to stress that it hopes companies are not waiting for a contractual requirement to take charge of their cybersecurity.</p>
-          <p>NIST provides best practices, guidance and reference for how to reduce cyber incidents. Main Sail has a well-experienced team that can assist your organization with the process to implement the 110 requirements of NIST 800-171. The implementation is not a trivial process. However, when completed, the requirements will position your organization with a strong cybersecurity posture that could put you ahead of your competition. Contact us today at mainsail@mainsailgroup.com for more information.</p>
-          <p>Main Sail has been designated as a Candidate for the CMMC 3rd Party Assessment Organization (C3PAO) authorization. Once we become a C3PAO, Main Sail will be authorized to conduct the CMMC audits for organizations seeking the certification.</p>
-          <p>The updates for CMMC 2.0 are detailed in this <a href="https://www.acq.osd.mil/asda/dpc/cp/cyber/cmmc.html" target="_blank" rel="noopener noreferrer">Acquisition and Sustanment</a> site.</p>
-          <p>Here is further detail about the <a href="https://www.federalregister.gov/documents/2021/11/17/2021-24880/cybersecurity-maturity-model-certification-cmmc-20-updates-and-way-forward" target="_blank" rel="noopener noreferrer">proposed rule for CMMC 2.0</a>.</p>
+        <div class="bwxt-content reveal">
+          <p>We are pleased to be the working with you for your assignment at BWXT. Main Sail has been a trusted service vendor of BWXT for over 10 years. We pride ourselves on providing exceptional service to both our clients and our staff. On behalf of our entire team, we welcome you to Main Sail!</p>
+          <p>Please fill out and return the following documents using the Barracuda encrypted email portal. This ensures your information is kept confidential. Alternately you can fax the documents to us at 216-491-4210.</p>
+
+          <h2>Background and Drug Screen Form</h2>
+          <p>We need this back as soon as possible as it will allow us to begin onboarding you. Once we receive this, we will send you information to go complete the drug screen.</p>
+          <ul>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2015/08/Background-And-Drug-Screen-Release.pdf" target="_blank" rel="noopener noreferrer">Background and Drug Screen Release</a></li>
+          </ul>
+
+          <h2>Payment Information</h2>
+          <p>We need the below documents to set you up in ADP, our payroll system. Once we receive these, you will receive an email from ADP within a couple of days inviting you to register on their site. This is where you will provide the information necessary to receive your payments.</p>
+          <ul>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2015/08/Personal_Information.pdf" target="_blank" rel="noopener noreferrer">General Information Form</a></li>
+            <li>Copy of IDs as per the I-9 Acceptable Documents form included in your welcome email</li>
+          </ul>
+
+          <h2>Employment Agreement Documents</h2>
+          <p>The employment contracts are included in your welcome email. Please sign and return these.</p>
+
+          <h2>BWXT Forms to Sign and Return</h2>
+          <p>The below BWXT documents must be signed and returned.</p>
+          <ul>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/BWXT-Documents-To-Sign_MSA-Attachments-3-4-5.pdf" target="_blank" rel="noopener noreferrer">BWXT Documents to Sign</a></li>
+          </ul>
+
+          <h2>Documents to Read</h2>
+          <h3>Main Sail Documents</h3>
+          <ul>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2025/04/BWXT-Time-Entry.pdf" target="_blank" rel="noopener noreferrer">BWXT Time and Expense Entry</a> (please note that you will receive your login details in the next few days)</li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2025/04/BWXT-Expense-Report.xlsx" target="_blank" rel="noopener noreferrer">BWXT-Expense-Report.xls</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2025/04/Main-Sail-LLC-handbook-2025.docx" target="_blank" rel="noopener noreferrer">Employee_Handbook</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2025/04/Main-Sail-Electronic-use-policy.pdf" target="_blank" rel="noopener noreferrer">Electronic_Use_policy</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2025/04/Main-Sail-Code-of-Ethics-Policy.pdf" target="_blank" rel="noopener noreferrer">Code_of_Ethics_Policy</a></li>
+          </ul>
+          <h3>BWXT Documents</h3>
+          <ul>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/1070.05-Protection-of-Company-Proprietary-Information.pdf" target="_blank" rel="noopener noreferrer">1070.05 BWXT Protection of Company Proprietary Information</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/0100.01-Code-of-Business-Conduct-Policy.pdf" target="_blank" rel="noopener noreferrer">0100.01 BWXT COBC Booklet</a>
+              <ul>
+                <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/0100.01-BWXT-Code-of-Business-Conduct-Attachment-A-COBC-Booklet.pdf" target="_blank" rel="noopener noreferrer">0100.01 BWXT COBC Attachment A</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/0100.18-Acceptable-Use-of-Company-Communication-and-Information-Systems.pdf" target="_blank" rel="noopener noreferrer">0100.18 BWXT Acceptable Use of Company Communication and Information Systems</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/0100.14-Discrimination-and-Harassment.pdf" target="_blank" rel="noopener noreferrer">0100.14 BWXT Discrimination and Harassment</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/0100.10-Drug-Free-Workplace-Policy.pdf" target="_blank" rel="noopener noreferrer">0100.10 BWXT Drug Free Workplace Policy</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/1030.08-Employee-Expense-Account-Business-Travel.pdf" target="_blank" rel="noopener noreferrer">1030.08 BWXT Employee Expense Account &amp; Business Travel</a></li>
+            <li><a href="https://www.mainsailgroup.com/wp-content/uploads/2026/02/0900-A-BWXT-Information-Technology-Requests.pdf" target="_blank" rel="noopener noreferrer">0900-A BWXT Information Technology Requests</a></li>
+          </ul>
+
+          <h2>Onboarding Complete</h2>
+          <p>That&rsquo;s it! We are available via phone or email to assist you with your documentation and with anything else you need. Please feel free to contact us:</p>
+          <div class="bwxt-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Position</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Judy Stefanik</td>
+                  <td>BWXT Program Administrator</td>
+                  <td><a href="mailto:MainSailSupportforBWXT@MainSailGroup.com">MainSailSupportforBWXT@MainSailGroup.com</a>; <a href="mailto:judy.stefanik@mainsailgroup.com">judy.stefanik@mainsailgroup.com</a></td>
+                  <td>(216) 283-6985</td>
+                </tr>
+                <tr>
+                  <td>Rachel Roberts</td>
+                  <td>Recruiter</td>
+                  <td><a href="mailto:Rachel.Roberts@mainsailgroup.com">Rachel.Roberts@mainsailgroup.com</a></td>
+                  <td>(440) 506-8413</td>
+                </tr>
+                <tr>
+                  <td>Joe Cabral</td>
+                  <td>BWXT Program Manager</td>
+                  <td><a href="mailto:JCabral@mainsailgroup.com">JCabral@mainsailgroup.com</a></td>
+                  <td>(216) 491-4209</td>
+                </tr>
+                <tr>
+                  <td>Thelma Phillips</td>
+                  <td>HR &amp; Payroll Manager</td>
+                  <td><a href="mailto:TPhillips@MainSailGroup.com">TPhillips@MainSailGroup.com</a></td>
+                  <td>(216) 283-6981</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
