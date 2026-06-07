@@ -1,0 +1,18 @@
+/*
+Theme Name: Main Sail
+Theme URI: https://www.mainsailgroup.com
+Author: Main Sail Group
+Author URI: https://www.mainsailgroup.com
+Description: Custom hand-coded theme for Main Sail — the "Operations Center" design system (Bridge Blue accent, Outfit + Source Sans 3, tinted-teal shadows). Hybrid architecture: 11 marketing pages rendered pixel-exact by hardcoded, router-owned templates; Operations pages (cmmc-2-0, corporate-compliance, main-sail-bwxt and any future page) are native WordPress Pages edited in Gutenberg and auto-branded via theme.json. No page builder, no paid plugins.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 8.0
+License: Proprietary — Main Sail Group. All rights reserved.
+Text Domain: main-sail
+*/
+
+/*
+ * The real, design-locked stylesheet lives at /css/styles.css and is enqueued in functions.php.
+ * This file carries only the WordPress theme header (required by WordPress).
+ */

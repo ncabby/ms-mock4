@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+/*
+ * Brand the Gutenberg editor so Operations-page authors see the live result.
+ * Mirrors css/ops-pages.css; kept self-contained because the editor iframe does not load styles.css.
+ */
+.editor-styles-wrapper {
+	font-family: 'Source Sans 3', sans-serif;
+	color: #204B57;
+	line-height: 1.7;
+	font-size: 1.125rem;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+	font-family: 'Outfit', sans-serif;
+	color: #204B57;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+}
+
+.editor-styles-wrapper h1 { letter-spacing: -0.03em; line-height: 1.15; }
+
+.editor-styles-wrapper a { color: #197BBD; text-underline-offset: 2px; }
+
+.editor-styles-wrapper table { border-collapse: collapse; width: 100%; }
+
+.editor-styles-wrapper th,
+.editor-styles-wrapper td {
+	border: 1px solid rgba(32, 75, 87, 0.15);
+	padding: 0.6rem 0.85rem;
+	text-align: left;
+}
+
+.editor-styles-wrapper th {
+	background: rgba(25, 123, 189, 0.1);
+	font-family: 'Outfit', sans-serif;
+	font-weight: 600;
+}

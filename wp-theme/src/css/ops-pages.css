@@ -1,0 +1,115 @@
+/*
+ * Operations (Gutenberg) pages — branded content column.
+ * Design tokens (--space-*, --font-*, --ms-*, shadows, radii) come from css/styles.css :root,
+ * which is always enqueued before this file.
+ */
+
+.ops-page-section {
+	padding: var(--space-4xl) 0;
+	background: var(--surface-base);
+}
+
+.ops-page-section .container {
+	max-width: 880px;
+}
+
+.ops-page-header {
+	margin-bottom: var(--space-2xl);
+	padding-bottom: var(--space-lg);
+	border-bottom: 1px solid var(--ms-dark-10);
+}
+
+.ops-page-header h1 {
+	font-family: var(--font-display);
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 700;
+	letter-spacing: var(--tracking-tight);
+	line-height: var(--leading-tight);
+	color: var(--ms-dark);
+}
+
+.ops-page-content {
+	font-family: var(--font-body);
+	font-size: 1.125rem;
+	line-height: var(--leading-normal);
+	color: var(--ms-dark-90);
+}
+
+.ops-page-content h2 {
+	font-family: var(--font-display);
+	font-size: 1.75rem;
+	font-weight: 700;
+	letter-spacing: var(--tracking-normal);
+	color: var(--ms-dark);
+	margin: var(--space-2xl) 0 var(--space-md);
+}
+
+.ops-page-content h3 {
+	font-family: var(--font-display);
+	font-size: 1.35rem;
+	font-weight: 600;
+	color: var(--ms-dark);
+	margin: var(--space-xl) 0 var(--space-sm);
+}
+
+.ops-page-content p {
+	margin-bottom: var(--space-lg);
+}
+
+.ops-page-content a {
+	color: var(--ms-bright);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	transition: color var(--duration-fast) var(--ease-smooth);
+}
+
+.ops-page-content a:hover,
+.ops-page-content a:focus-visible {
+	color: var(--ms-medium);
+}
+
+.ops-page-content ul,
+.ops-page-content ol {
+	margin: 0 0 var(--space-lg) var(--space-lg);
+}
+
+.ops-page-content li {
+	margin-bottom: var(--space-xs);
+}
+
+.ops-page-content table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: var(--space-lg) 0;
+	box-shadow: var(--shadow-elevated);
+	border-radius: var(--radius-md);
+	overflow: hidden;
+}
+
+.ops-page-content th,
+.ops-page-content td {
+	padding: var(--space-sm) var(--space-md);
+	text-align: left;
+	border-bottom: 1px solid var(--ms-dark-10);
+}
+
+.ops-page-content th {
+	background: var(--ms-bright-10);
+	font-family: var(--font-display);
+	font-weight: 600;
+	color: var(--ms-dark);
+}
+
+.ops-page-content img {
+	max-width: 100%;
+	height: auto;
+	border-radius: var(--radius-md);
+}
+
+.ops-page-content blockquote {
+	border-left: 3px solid var(--ms-bright);
+	padding-left: var(--space-lg);
+	margin: var(--space-lg) 0;
+	color: var(--ms-dark-70);
+	font-style: italic;
+}
