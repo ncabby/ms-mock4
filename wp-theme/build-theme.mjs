@@ -165,6 +165,11 @@ function transformPage(html, { isContact = false } = {}) {
 }
 
 function contactMods(s) {
+  // Contact form submits to Web3Forms over HTTPS — no DNS records and no host SMTP needed.
+  // AJAX keeps the success/error banner inline (works identically on /staging and live, no
+  // per-environment config). The access key is public by design (it lives in the form markup).
+  const WEB3FORMS_KEY = '69f668b7-fd6a-4c0c-932b-c7b59db61fe7';
+
   const bannerStyle =
     '  <style>.form-banner{padding:1rem 1.25rem;border-radius:10px;margin-bottom:1.5rem;font-weight:600;line-height:1.5}' +
     '.form-banner-success{background:rgba(25,123,189,.1);color:#125E8A;border:1px solid rgba(25,123,189,.3)}' +
@@ -175,17 +180,43 @@ function contactMods(s) {
   if (!s.includes(formNeedle)) throw new Error('contact: form needle not found');
   s = s.replace(
     formNeedle,
-    `<form action="<?php echo esc_url( home_url( '/contact' ) ); ?>" method="POST">\n` +
-      `            <?php wp_nonce_field( 'mainsail_contact', 'mainsail_contact_nonce' ); ?>\n` +
-      `            <input type="text" name="ms_hp" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">`
+    `<form id="ms-contact-form" action="https://api.web3forms.com/submit" method="POST">\n` +
+      `            <input type="hidden" name="access_key" value="${WEB3FORMS_KEY}">\n` +
+      `            <input type="hidden" name="subject" value="New inquiry from the Main Sail website">\n` +
+      `            <input type="hidden" name="from_name" value="Main Sail Website">\n` +
+      `            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;">`
+  );
+
+  // Keep the inquiry type out of the email Subject (the hidden "subject" field owns it).
+  s = s.replace(
+    '<select id="subject" name="subject" class="form-select" required>',
+    '<select id="subject" name="inquiry_type" class="form-select" required>'
   );
 
   const h3Needle = '<h3 style="margin-bottom:var(--space-xl);">Send Us a Message</h3>';
   if (!s.includes(h3Needle)) throw new Error('contact: h3 needle not found');
   s = s.replace(
     h3Needle,
-    `${h3Needle}\n          <?php echo mainsail_contact_banner(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper returns pre-escaped HTML. ?>`
+    `${h3Needle}\n          <div id="ms-contact-status" class="form-banner" role="status" style="display:none;"></div>`
   );
+
+  const script = `<script>
+  (function(){
+    var form=document.getElementById('ms-contact-form'); if(!form) return;
+    var box=document.getElementById('ms-contact-status');
+    function show(ok,msg){ box.textContent=msg; box.className='form-banner '+(ok?'form-banner-success':'form-banner-error'); box.style.display='block'; box.scrollIntoView({behavior:'smooth',block:'center'}); }
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var btn=form.querySelector('button[type=submit]'); if(btn){btn.disabled=true;}
+      fetch(form.action,{method:'POST',headers:{Accept:'application/json'},body:new FormData(form)})
+        .then(function(r){return r.json();})
+        .then(function(j){ if(j.success){ show(true,'Thank you — your message has been sent. We respond within one business day.'); form.reset(); } else { show(false,'Sorry, we could not send your message. Please email msail@mainsailgroup.com directly.'); } })
+        .catch(function(){ show(false,'Network error. Please email msail@mainsailgroup.com directly.'); })
+        .then(function(){ if(btn){btn.disabled=false;} });
+    });
+  })();
+</script>`;
+  s = s.replace('  <?php wp_footer(); ?>\n</body>', '  ' + script + '\n  <?php wp_footer(); ?>\n</body>');
 
   return s;
 }
