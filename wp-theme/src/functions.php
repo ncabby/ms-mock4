@@ -88,8 +88,10 @@ function mainsail_enqueue() {
 		mainsail_asset_ver( 'css/styles.css' )
 	);
 
-	// Operations (Gutenberg) page branding — load only where it is used.
-	if ( is_page() && ! mainsail_is_router_page() ) {
+	// Operations (Gutenberg) page branding — load only where it is used. Also the branded
+	// 404 (404.php), which reuses the .ops-page-section chrome (its top padding clears the
+	// fixed header; without this CSS the heading renders under the header).
+	if ( ( is_page() && ! mainsail_is_router_page() ) || is_404() ) {
 		wp_enqueue_style(
 			'mainsail-ops',
 			MAINSAIL_URI . '/css/ops-pages.css',
