@@ -287,7 +287,7 @@ fs.copyFileSync(path.join(REPO, 'js/main.js'), path.join(THEME, 'js/main.js')); 
 copyDir(path.join(REPO, 'brand_assets'), path.join(THEME, 'brand_assets'));
 
 console.log('• screenshot.jpg');
-fs.copyFileSync(path.join(REPO, 'brand_assets/solutions-bg.jpg'), path.join(THEME, 'screenshot.jpg'));
+fs.copyFileSync(path.join(REPO, 'brand_assets/theme-screenshot.jpg'), path.join(THEME, 'screenshot.jpg'));
 
 console.log('• transforming marketing pages -> PHP templates');
 for (const [htmlFile, outRel] of Object.entries(MARKETING)) {
