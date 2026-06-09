@@ -88,10 +88,14 @@ function mainsail_enqueue() {
 		mainsail_asset_ver( 'css/styles.css' )
 	);
 
-	// Operations (Gutenberg) page branding — load only where it is used. Also the branded
-	// 404 (404.php), which reuses the .ops-page-section chrome (its top padding clears the
-	// fixed header; without this CSS the heading renders under the header).
-	if ( ( is_page() && ! mainsail_is_router_page() ) || is_404() ) {
+	// Operations / generic content pages (rendered by page.php) and the branded 404 reuse the
+	// .ops-page-section chrome, whose top padding clears the fixed header — without this CSS the
+	// heading renders under the header at the wrong size. Detect a themed content page by the
+	// queried object's slug, NOT the request path: a draft Preview is served at ?page_id=…
+	// (empty path), where the path-based router check misfires and would suppress this stylesheet.
+	$queried              = get_queried_object();
+	$is_marketing_owned   = ( $queried instanceof WP_Post ) && array_key_exists( $queried->post_name, mainsail_marketing_map() );
+	if ( is_404() || ( is_page() && ! $is_marketing_owned ) ) {
 		wp_enqueue_style(
 			'mainsail-ops',
 			MAINSAIL_URI . '/css/ops-pages.css',

@@ -261,12 +261,42 @@ function buildPartials(neutralHtml) {
   return { headerPhp, footerPhp };
 }
 
-/** Extract inner content (between header and footer) of an ops page for Gutenberg seeding. */
+/**
+ * Extract the *body* of an ops page for Gutenberg seeding: the inner HTML of the page's
+ * `.*-content reveal` wrapper only. Deliberately drops the full-bleed hero (page.php renders
+ * the page title) and the marketing layout wrappers (page.php supplies the reading column) —
+ * pasting those produced a duplicate title and a boxed, "narrow" hero. Theme-asset paths are
+ * rewritten to the bundled theme copy so images resolve when pasted into a WP Page.
+ */
 function opsSeed(html) {
-  const start = html.indexOf('<section id="main"');
-  const end = html.indexOf('<footer');
-  if (start < 0 || end < 0) throw new Error('opsSeed: markers not found');
-  return html.slice(start, end).trim();
+  // Skip the hero (first <section>…</section>); the body wrapper sits in the section after it.
+  const afterHero = html.indexOf('</section>');
+  const base = afterHero >= 0 ? afterHero + '</section>'.length : 0;
+  const open = html.slice(base).match(/<div class="[a-z0-9-]*content reveal">/i);
+  if (!open) throw new Error('opsSeed: content wrapper not found');
+  const innerStart = base + open.index + open[0].length;
+  const tag = /<(\/?)div\b[^>]*>/gi;
+  tag.lastIndex = innerStart;
+  let depth = 1, m;
+  while ((m = tag.exec(html))) {
+    depth += m[1] ? -1 : 1;
+    if (0 === depth) {
+      let body = html.slice(innerStart, m.index);
+      body = body.replace(/(src|href)="\/brand_assets\//g, '$1="/wp-content/themes/main-sail/brand_assets/');
+      return dedent(body).trim();
+    }
+  }
+  throw new Error('opsSeed: unbalanced content wrapper');
+}
+
+/** Strip the common leading indentation from every line (the body is deeply nested in source). */
+function dedent(s) {
+  const lines = s.replace(/^\n+/, '').replace(/\s+$/, '').split('\n');
+  let min = Infinity;
+  for (const ln of lines) {
+    if (ln.trim()) min = Math.min(min, ln.match(/^ */)[0].length);
+  }
+  return isFinite(min) && min > 0 ? lines.map((ln) => ln.slice(min)).join('\n') : lines.join('\n');
 }
 
 // ---- build -----------------------------------------------------------------
